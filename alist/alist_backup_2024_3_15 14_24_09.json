@@ -1,0 +1,779 @@
+{
+  "encrypted": "",
+  "settings": [
+    {
+      "key": "version",
+      "value": "v3.32.0",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 1,
+      "flag": 2
+    },
+    {
+      "key": "site_title",
+      "value": "动漫资源库",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "announcement",
+      "value": "10月新番(持续更新)",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "pagination_type",
+      "value": "pagination",
+      "deprecated_value": "",
+      "help": "",
+      "type": "select",
+      "options": "all,pagination,load_more,auto_load_more",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "default_page_size",
+      "value": "30",
+      "deprecated_value": "",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "allow_indexed",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "allow_mounted",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "robots_txt",
+      "value": "User-agent: *\nAllow: /",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 1,
+      "flag": 0
+    },
+    {
+      "key": "logo",
+      "value": "https://jsd.nn.ci/gh/alist-org/logo@main/logo.svg",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "favicon",
+      "value": "https://jsd.nn.ci/gh/alist-org/logo@main/logo.svg",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "main_color",
+      "value": "#1890ff",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "home_icon",
+      "value": "🏠",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "home_container",
+      "value": "hope_container",
+      "deprecated_value": "",
+      "help": "",
+      "type": "select",
+      "options": "max_980px,hope_container",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "settings_layout",
+      "value": "responsive",
+      "deprecated_value": "",
+      "help": "",
+      "type": "select",
+      "options": "list,responsive",
+      "group": 2,
+      "flag": 0
+    },
+    {
+      "key": "text_types",
+      "value": "txt,htm,html,xml,java,properties,sql,js,md,json,conf,ini,vue,php,py,bat,gitignore,yml,go,sh,c,cpp,h,hpp,tsx,vtt,srt,ass,rs,lrc",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "audio_types",
+      "value": "mp3,flac,ogg,m4a,wav,opus,wma",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "video_types",
+      "value": "mp4,mkv,avi,mov,rmvb,webm,flv",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "image_types",
+      "value": "jpg,tiff,jpeg,png,gif,bmp,svg,ico,swf,webp",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "proxy_types",
+      "value": "m3u8",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "proxy_ignore_headers",
+      "value": "authorization,referer",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 1
+    },
+    {
+      "key": "external_previews",
+      "value": "{\n  \"txt\": {\n    \"Notepad\": \"notepad://$url\"\n  },\n  \"/.*/\": {\n    \"VSCode\": \"vscode://$url\"\n  }\n}",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "iframe_previews",
+      "value": "{\n\t\"doc,docx,xls,xlsx,ppt,pptx\": {\n\t\t\"Microsoft\":\"https://view.officeapps.live.com/op/view.aspx?src=$e_url\",\n\t\t\"Google\":\"https://docs.google.com/gview?url=$e_url&embedded=true\"\n\t},\n\t\"pdf\": {\n\t\t\"PDF.js\":\"https://alist-org.github.io/pdf.js/web/viewer.html?file=$e_url\"\n\t},\n\t\"epub\": {\n\t\t\"EPUB.js\":\"https://alist-org.github.io/static/epub.js/viewer.html?url=$e_url\"\n\t}\n}",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "audio_cover",
+      "value": "https://jsd.nn.ci/gh/alist-org/logo@main/logo.svg",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "audio_autoplay",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "video_autoplay",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 3,
+      "flag": 0
+    },
+    {
+      "key": "hide_files",
+      "value": "/\\/README.md/i",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "package_download",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "customize_head",
+      "value": "<!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->\n<script src=\"https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll\"></script>\n\n<!--引入字体，全局字体使用-->\n<link rel=\"stylesheet\" href=\"https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css\" />\n\n<!--评论系统使用的js-->\n<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>\n\n<!--不蒜子计数器-->\n<script async src=\"https://busuanzi.icodeq.com/busuanzi.pure.mini.js\"></script>\n\n<!-- Font6，自定义底部使用和看板娘使用的图标和字体文件-->\n<link type='text/css' rel=\"stylesheet\" href=\"https://npm.elemecdn.com/font6pro@6.3.0/css/fontawesome.min.css\" media='all'>\n<link href=\"https://npm.elemecdn.com/font6pro@6.3.0/css/all.min.css\" rel=\"stylesheet\">\n\n<!--音乐播放器所用的文件-->\n<!-- require APlayer -->\n<link rel=\"stylesheet\" href=\"https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css\">\n<script src=\"https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js\"></script>\n<!-- require MetingJS -->\n<script src=\"https://npm.elemecdn.com/meting2@0.0.1/js/Meting.min.js\"></script>\n\n<style>\n/* 去除通知栏 右上角 X */\n .notify-render .hope-close-button {\n    display: none;\n}\n\n/* 此选项两处CSS 在v3.31.0中已优化 滚动显示 和 右下角设置网格模式尺寸大小 */\n/* 文字超长自动换行 */\n/*.name-box .name {\n    white-space: unset !important;\n    overflow: unset !important;\n}*/\n/* 缩略图图片变大 代码中的160px 自己改 现在是注释状态若需要自行解除注释 */\n/*.obj-box > div {\ngrid-template-columns: repeat(auto-fill, minmax(160px, 1fr))\n}\n.obj-box > div .item-thumbnail{\n  height: 100px;\n}*/\n \n/*\n  图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试\n  樱花：https://www.dmoe.cc\n  夏沫：https://cdn.seovx.com\n  搏天：https://api.btstu.cn/doc/sjbz.php\n  姬长信：https://github.com/insoxin/API\n  小歪：https://api.ixiaowai.cn/\n  保罗：https://api.paugram.com\n  墨天逸：https://api.mtyqx.cn\n  岁月小筑：https://img.xjh.me\n  东方Project：https://img.paulzzh.com\n  */\n \n/*白天背景图*/\n .hope-ui-light {\n    background-image: url(\"http://pic.rmb.bdstatic.com/bjh/7569b014a1abafd5481298763300ae1d.png\") !important;\n    background-repeat:no-repeat;\n    background-size:cover;\n    background-attachment:fixed;\n    background-position-x:center;\n}\n/*夜间背景图*/\n .hope-ui-dark {\n    background-image: url(\"http://pic.rmb.bdstatic.com/bjh/ebe942a9de49856f389c65f25a338335.png\") !important;\n    background-repeat:no-repeat;\n    background-size:cover;\n    background-attachment:fixed;\n    background-position-x:center;\n}\n/*主列表白天模式透明*/\n .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n}\n/*主列表夜间模式透明*/\n .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {\n    background-color:rgb(0 0 0 / 50%) !important;\n}\n/*readme白天模式透明*/\n .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n}\n/*readme夜间模式透明*/\n .hope-c-PJLV.hope-c-PJLV-iiuDLME-css {\n    background-color:rgb(0 0 0 / 50%) !important;\n}\n\n/*顶部右上角切换按钮透明*/\n .hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n}\n.hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {\n    background-color:rgb(0 0 0 / 50%) !important;\n}\n\n/*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/\n .hope-ui-light .hope-c-PJLV-ijgzmFG-css {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n}\n.hope-ui-dark .hope-c-PJLV-ijgzmFG-css {\n    background-color:rgb(0 0 0 / 50%) !important;\n}\n\n/*白天模式代码块透明*/\n .hope-ui-light pre {\n    background-color: rgba(255, 255, 255, 0.1)!important;\n}\n/*夜间模式代码块透明*/\n .hope-ui-dark pre {\n    background-color: rgba(255, 255, 255, 0)!important;\n}\n\n/*左侧侧边栏目录*/\n/*白天模式*/\n .hope-ui-light .hope-c-PJLV-ieGWMbI-css {\n    background: rgba(255, 255, 255, 0.5) !important;\n}\n/*夜间模式*/\n .hope-ui-dark .hope-c-PJLV-ieGWMbI-css {\n    background-color:rgb(0 0 0 / 50%) !important;\n}\n\n/* 返回顶部 */\n .hope-c-PJLV-ihVEsOa-css {\n    background: rgba(255, 255, 255, 0.5) !important;\n}\n.hope-ui-dark .hope-c-PJLV-ihVEsOa-css {\n    background-color:rgb(0 0 0 / 50%) !important;\n}\n\n/*正常情况未使用吸附功能*/\n/*顶部*/\n .hope-c-PJLV-ikaMhsQ-css {\n    background: rgba(255, 255, 255, 0) !important;\n}\n/*导航条*/ \n/*白天模式*/\n .hope-ui-light .hope-c-PJLV-idaeksS-css {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n    border-radius: var(--hope-radii-xl) !important;\n}\n/*夜间模式*/\n .hope-ui-dark .hope-c-PJLV-idaeksS-css {\n    background-color:rgb(0 0 0 / 50%) !important;\n    border-radius: var(--hope-radii-xl) !important;\n}\n/* 吸附到页面顶部 */\n/*顶部*/\n .hope-c-PJLV-icWrYmg-css {\n    background: rgba(255, 255, 255, 0) !important;\n}\n/*导航条*/\n .hope-c-PJLV-icKsjdm-css::after {\n    background: rgba(255, 255, 255, 0) !important;\n}\n/*白天模式*/\n .hope-ui-light .hope-c-PJLV-icKsjdm-css {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n    border-radius: var(--hope-radii-xl) !important;\n}\n/*夜间模式*/\n .hope-ui-dark .hope-c-PJLV-icKsjdm-css {\n    background-color:rgb(0 0 0 / 50%) !important;\n    border-radius: var(--hope-radii-xl) !important;\n}\n\n/*仅吸附导航栏*/\n/*导航条*/\n .hope-c-PJLV-ifdXShc-css::after {\n    background: rgba(255, 255, 255, 0) !important;\n}\n/*白天模式*/\n .hope-ui-light .hope-c-hrsMRY {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n    border-radius: var(--hope-radii-xl) !important;\n}\n/*夜间模式*/\n .hope-ui-dark .hope-c-hrsMRY {\n    background-color:rgb(0 0 0 / 50%) !important;\n    border-radius: var(--hope-radii-xl) !important;\n}\n\n/*底部CSS，.App .table这三个一起的*/\n dibu {\n    border-top: 0px;\n    position: absolute;\n    bottom: 0;\n    width: 100%;\n    margin: 0px;\n    padding: 0px;\n}\n.App {\n    min-height: 85vh;\n}\n.table {\n    margin: auto;\n}\n/*去掉底部*/\n .footer {\n    display: none !important;\n}\n/*全局字体*/\n * {\n    font-family:LXGW WenKai\n}\n* {\n    font-weight:bold\n}\nbody {\n    font-family: LXGW WenKai;\n}\n\n/*以下为评论系统专用*/\n/*适配大小契合度*/\n .newValine {\n    width: min(96%, 940px);\n    flex-direction: column;\n    row-gap: var(--hope-space-2);\n    border-radius: var(--hope-radii-xl);\n    padding: var(--hope-space-2);\n    box-shadow: var(--hope-shadows-lg);\n}\n/*评论区 - 白天模式透明度*/\n .hope-ui-light .newValine {\n    background-color: rgba(255, 255, 255, 0.5) !important;\n}\n/*评论区 - 夜间模式透明度*/\n .hope-ui-dark .newValine {\n    background-color:rgb(0 0 0 / 50%) !important;\n}\n/*输入栏里面跳舞的小人背景图*/\n .vedit {\n    background-image:url(\"https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif\");\n    background-size:contain;\n    background-repeat:no-repeat;\n    background-position:right bottom;\n    transition:all 0.25s ease-in-out 0s;\n}\ntextarea#comment-textarea:focus {\n    background-position-y:120px;\n    transition:all 0.25s ease-in-out 0s;\n}\n\n/*渐变背景CSS*/\n #canvas-basic {\n    position: fixed;\n    display: block;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: -999;\n}\n\n/*音乐播放器进一步进行隐藏*/\n/* 需要就加不需要就不用加 */\n .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {\n    left: -66px !important;\n}\n.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {\n    left: 0 !important;\n}\n</style>\n\n<!--看板娘 -自定义大小，隐藏对话框和对话框高度-->\n<style type=\"text/css\">\n  #waifu #live2d {\n    height: 350px!important;\n    width: 350px!important;\n  }\n  #waifu-tips {\n    top: -60px;\n    /*display:none !important;隐藏对话框*/\n  }\n</style>\n\n<!--看板娘加载指定模型-->\n<script>\n  localStorage.setItem('modelId', '7');\n  localStorage.setItem('modelTexturesId', '3');\n</script>\n\n<!--以下四个两个主用两个备用的,选一条使用即可-->\n<!--自己选左右-->\n<!--<script src=\"https://api.itggg.cn/live2dnew/left/index.js\"></script>-->\n<script src=\"https://api.itggg.cn/live2dnew/right/index.js\"></script>\n\n<!--备用的，自己选左右-->\n<script src=\"https://luluossfile.lulufind.com/work/teacher_u20221017ce7b5991_1666420843832_19934968_file.js\"></script>\n<script src=\"https://luluossfile.lulufind.com/work/teacher_u20221017bb6d7454_1666420849979_19584065_file.js\"></script>\n\n<style>\n/*白天模式 搜索主体+毛玻璃*/\n.hope-ui-light .hope-c-PJLV-iiBaxsN-css{\n   background-color: rgba(255,255,255,0.2)!important;\n   backdrop-filter: blur(10px)!important;\n}\n\n/*白天模式 搜索栏输入框+毛玻璃*/\n.hope-ui-light .hope-c-kvTTWD-hYRNAb-variant-filled{\n   background-color: rgba(255,255,255,0.2)!important;\n   backdrop-filter: blur(10px)!important;\n}\n\n/*白天模式 搜索按钮+毛玻璃*/\n.hope-ui-light .hope-c-PJLV-ikEIIxw-css{\n   background-color: rgba(255,255,255,0.2)!important;\n   backdrop-filter: blur(10px)!important;\n   padding: var(--hope-space-1)!important;\n}\n\n/*夜间模式搜索主体+毛玻璃*/\n.hope-ui-dark .hope-c-PJLV-iiBaxsN-css{\n    background-color: rgb(0 0 0 / 10%)!important;\n    backdrop-filter: blur(10px)!important;\n}\n\n/*夜间模式搜索栏+毛玻璃*/\n.hope-ui-dark .hope-c-kvTTWD-hYRNAb-variant-filled{\n    background-color: rgb(0 0 0 / 10%)!important;\n    backdrop-filter: blur(10px)!important;\n}\n\n/*夜间模式 搜索按钮+毛玻璃*/\n.hope-ui-dark .hope-c-PJLV-ikEIIxw-css{\n    background-color: rgb(0 0 0 / 10%)!important;\n    backdrop-filter: blur(10px)!important;\n    padding: var(--hope-space-1)!important;\n}\n</style>\n\n<!--较为个性化的鼠标指针样式，可结合个人需要自行修改-->\n<style>\n  body {\n    cursor: url(http://luluossfile.lulufind.com/work/teacher_u20221021b3a89013_1666841028833_10660845_file.cur), default;\n  }\n  select{\n    cursor: url(http://luluossfile.lulufind.com/work/teacher_u2021090299b56677_1666842679271_10490748_file.cur), pointer;\n  }\n  button,a:hover{\n    cursor: url(http://luluossfile.lulufind.com/work/teacher_u20221017ac9f1124_1666842626270_11086578_file.cur), pointer;\n  }\n  input{\n    cursor:url(http://luluossfile.lulufind.com/work/teacher_u2021090299b56677_1666842633386_14976764_file.cur), text;\t\n  }\n  textarea,input:focus{\n    cursor:url(http://luluossfile.lulufind.com/work/teacher_u202210176ba36766_1666842640146_15845280_file.cur), text;\t\n  }\n  code{\n    cursor: url(http://luluossfile.lulufind.com/work/teacher_u20221021b3a89013_1666842646779_15864973_file.cur), default;\t\n  }\n  pre>code{\n    cursor: url(http://luluossfile.lulufind.com/work/teacher_u202210176ba36766_1666842653500_10010236_file.cur), default;\t\n  }\n</style>\n",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "customize_body",
+      "value": "<!--延迟加载-->\n<!--如果要写自定义内容建议都加到这个延迟加载的范围内-->\n<div id=\"customize\" style=\"display: none;\">\n    <div>\n\t\t<!--音乐播放器-->\n        <meting-js fixed=\"true\" autoplay=\"true\" theme=\"#409EFF\" list-folded=\"true\" server=\"netease\" type=\"playlist\" id=\"2568697963\"></meting-js>\n\n\t\t\n\t\t<!--评论模块还有下面的script也是-->\n\t\t<center>\n\t\t\t<div class=\"newValine\" id=\"vcomments\"></div>\n\t\t</center>\n\t\t<script>\n\t\t\tnew Valine({\n\t\t\t\tvisitor: true,\n\t\t\t\tel: '#vcomments',\n\t\t\t\tavatar: 'wavatar',\n\t\t\t\tappId: 'mqNCZUaZM1z4nPlpFSQBSGH7-gzGzoHsz',\n\t\t\t\tappKey: '2umMHA8W4tTcXG2kTqroZ6xS',\n\t\t\t\tMasterKey: 'sZBKcqA9XTFpQ7QMKB16UBIY',\n\t\t\t\tplaceholder: \"有什么问题欢迎评论区留言~么么哒\"\n\t\t\t}) \n\t\t</script>\n\n        <br/>\n        <center class=\"dibu\">\n            <div style=\" line-height: 20px;font-size: 9pt;font-weight: bold;\">\n                <span>\n                    \"\n                    <span style=\"color: rgb(13, 109, 252); font-weight: bold;\" id=\"hitokoto\">\n                        <a href=\"#\" id=\"hitokoto_text\">\n                            \"人生最大的遗憾,就是在最无能为力的时候遇到一个想要保护一生的人.\"\n                        </a>\n                    </span> \"\n                </span>\n                <p style=\"margin-left: 10rem;font-size: 8pt;\">\n                    <small>\n                        —— Anwen's Cloud\n                    </small>\n                </p>\n            </div>\n\n            <div style=\"font-size: 13px; font-weight: bold;\">\n                <span class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"https://qm.qq.com/q/Sg5y2WlO00\"\n                        target=\"_blank\">\n                        <i class=\"fab fa-qq\" style=\"color:#409EFF\" aria-hidden=\"true\">\n                        </i>\n                        QQ |\n                    </a>\n                </span>\n                <span class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"mailto:d342jxc@gmail.com\" target=\"_blank\">\n                        <i class=\"fa-duotone fa-envelope-open\" style=\"color:#409EFF\" aria-hidden=\"true\">\n                        </i>\n                        邮箱 |\n                    </a>\n                </span>\n                <span class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\" target=\"_blank\">\n                        <i class=\"fas fa-edit\" style=\"color:#409EFF\" aria-hidden=\"true\">\n                        </i>\n                        博客 |\n                    </a>\n                </span>\n                <span class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\" target=\"_blank\">\n                        <i class=\"fas fa-comment-lines\" style=\"color:#409EFF;\" aria-hidden=\"true\">\n                        </i>\n                        留言 |\n                    </a>\n                </span>\n                <!--后台入口-->\n                <span class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"/@manage\" target=\"_blank\">\n                        <i class=\"fa-solid fa-folder-gear\" style=\"color:#409EFF;\" aria-hidden=\"true\">\n                        </i>\n                        管理 |\n                    </a>\n                </span>\n                <!--版权，请尊重作者-->\n                <span class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"https://github.com/Xhofe/alist\" target=\"_blank\">\n                        <i class=\"fa-solid fa-copyright\" style=\"color:#409EFF;\" aria-hidden=\"true\">\n                        </i>\n                        Alist\n                    </a>\n                </span>\n\t\t\t\t<br />\n\t\t\t\t<!--添加一个访问量-->\n\t\t\t\t<span>\n                    本\"<span style=\"color: rgb(13, 109, 252); font-weight: bold;\"><a href=\"#\">目录</a></span>\"访问量 <span id=\"busuanzi_value_page_pv\" style=\"color: rgb(13, 109, 252); font-weight: bold;\"></span> 次 本站总访问量 <span id=\"busuanzi_value_site_pv\" style=\"color: rgb(13, 109, 252); font-weight: bold;\"></span>                次 本站总访客数 <span id=\"busuanzi_value_site_uv\" style=\"color: rgb(13, 109, 252); font-weight: bold;\"></span> 人\n                </span>\n                <br />\n\t\t\t\t<!--添加备案信息-->\n                <span class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"https://beian.miit.gov.cn/#/Integrated/index\" target=\"_blank\">\n                        <i class=\"fa-solid fa-shield-check\" style=\"color:#409EFF;\" aria-hidden=\"true\">\n                        </i>\n                        冀 ICP备2222000777号\n                    </a>\n                </span>\n            </div>\n        </center>\n        <br />\n        <br />\n    </div>\n\n\n\n    <!--一言API-->\n    <script src=\"https://v1.hitokoto.cn/?encode=js&select=%23hitokoto\" defer></script>\n<!--延迟加载范围到这里结束-->\n</div>\n<!--延迟加载配套使用JS-->\n<script>\n    let interval = setInterval(() => {\n        if (document.querySelector(\".footer\")) {\n            document.querySelector(\"#customize\").style.display = \"\";\n            clearInterval(interval);\n        }\n    }, 200);\n</script>\n\n<!-- 渐变背景初始化,如果要使用渐变背景把下面的那一行注释去掉即可-->\n<!-- 下面的几行都是渐变的一套,自定义头部内还有一个关联的自定义CSS -->\n<!--<canvas id=\"canvas-basic\"></canvas> -->\n<script src=\"https://npm.elemecdn.com/granim@2.0.0/dist/granim.min.js\"></script>\n<script>\nvar granimInstance = new Granim({\n    element: '#canvas-basic',\n    direction: 'left-right',\n    isPausedWhenNotInView: true,\n    states : {\n        \"default-state\": {\n            gradients: [\n                ['#a18cd1', '#fbc2eb'],\n                 ['#fff1eb', '#ace0f9'],\n                 ['#d4fc79', '#96e6a1'],\n                 ['#a1c4fd', '#c2e9fb'],\n                 ['#a8edea', '#fed6e3'],\n                 ['#9890e3', '#b1f4cf'],\n                 ['#a1c4fd', '#c2e9fb'],\n                 ['#fff1eb', '#ace0f9']\n           \n            ]\n        }\n    }\n});\n</script>\n\n<!--鼠标点击效果-->\n<script src=\"https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js\"></script>",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "link_expiration",
+      "value": "0",
+      "deprecated_value": "",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "sign_all",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "privacy_regs",
+      "value": "(?:(?:\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(?:\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\n([[:xdigit:]]{1,4}(?::[[:xdigit:]]{1,4}){7}|::|:(?::[[:xdigit:]]{1,4}){1,6}|[[:xdigit:]]{1,4}:(?::[[:xdigit:]]{1,4}){1,5}|(?:[[:xdigit:]]{1,4}:){2}(?::[[:xdigit:]]{1,4}){1,4}|(?:[[:xdigit:]]{1,4}:){3}(?::[[:xdigit:]]{1,4}){1,3}|(?:[[:xdigit:]]{1,4}:){4}(?::[[:xdigit:]]{1,4}){1,2}|(?:[[:xdigit:]]{1,4}:){5}:[[:xdigit:]]{1,4}|(?:[[:xdigit:]]{1,4}:){1,6}:)\n(?U)access_token=(.*)&",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 1
+    },
+    {
+      "key": "ocr_api",
+      "value": "https://api.nn.ci/ocr/file/json",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "filename_char_mapping",
+      "value": "{\"/\": \"|\"}",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "forward_direct_link_params",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "ignore_direct_link_params",
+      "value": "sign,alist_ts",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "webauthn_login_enabled",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 4,
+      "flag": 0
+    },
+    {
+      "key": "token",
+      "value": "alist-99a4a6f4-4cc9-4b54-ab36-158cacda7c1fuZwKR3LKdAR20a5J0mAmbbmXfMevSmwC9RXGVoHAZyVFcyfcQmpNwRmAzXw89Pop",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 0,
+      "flag": 1
+    },
+    {
+      "key": "search_index",
+      "value": "database_non_full_text",
+      "deprecated_value": "",
+      "help": "",
+      "type": "select",
+      "options": "database,database_non_full_text,bleve,none",
+      "group": 6,
+      "flag": 0
+    },
+    {
+      "key": "auto_update_index",
+      "value": "true",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 6,
+      "flag": 0
+    },
+    {
+      "key": "ignore_paths",
+      "value": "",
+      "deprecated_value": "",
+      "help": "one path per line",
+      "type": "text",
+      "options": "",
+      "group": 6,
+      "flag": 1
+    },
+    {
+      "key": "max_index_depth",
+      "value": "100",
+      "deprecated_value": "",
+      "help": "max depth of index",
+      "type": "number",
+      "options": "",
+      "group": 6,
+      "flag": 1
+    },
+    {
+      "key": "index_progress",
+      "value": "{\"obj_count\":0,\"is_done\":true,\"last_done_time\":null,\"error\":\"\"}",
+      "deprecated_value": "",
+      "help": "",
+      "type": "text",
+      "options": "",
+      "group": 0,
+      "flag": 1
+    },
+    {
+      "key": "sso_login_enabled",
+      "value": "false",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 7,
+      "flag": 0
+    },
+    {
+      "key": "sso_login_platform",
+      "value": "Github",
+      "deprecated_value": "",
+      "help": "",
+      "type": "select",
+      "options": "Casdoor,Github,Microsoft,Google,Dingtalk,OIDC",
+      "group": 7,
+      "flag": 0
+    },
+    {
+      "key": "sso_client_id",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_client_secret",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_oidc_username_key",
+      "value": "name",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_organization_name",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_application_name",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_endpoint_name",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_jwt_public_key",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_auto_register",
+      "value": "false",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_default_dir",
+      "value": "/",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_default_permission",
+      "value": "0",
+      "deprecated_value": "",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 7,
+      "flag": 1
+    },
+    {
+      "key": "sso_compatibility_mode",
+      "value": "false",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 7,
+      "flag": 0
+    },
+    {
+      "key": "ldap_login_enabled",
+      "value": "false",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 8,
+      "flag": 0
+    },
+    {
+      "key": "ldap_server",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 8,
+      "flag": 1
+    },
+    {
+      "key": "ldap_manager_dn",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 8,
+      "flag": 1
+    },
+    {
+      "key": "ldap_manager_password",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 8,
+      "flag": 1
+    },
+    {
+      "key": "ldap_user_search_base",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 8,
+      "flag": 1
+    },
+    {
+      "key": "ldap_user_search_filter",
+      "value": "(uid=%s)",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 8,
+      "flag": 1
+    },
+    {
+      "key": "ldap_default_dir",
+      "value": "/",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 8,
+      "flag": 1
+    },
+    {
+      "key": "ldap_default_permission",
+      "value": "0",
+      "deprecated_value": "",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 8,
+      "flag": 1
+    },
+    {
+      "key": "ldap_login_tips",
+      "value": "login with ldap",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 8,
+      "flag": 0
+    },
+    {
+      "key": "s3_enabled",
+      "value": "false",
+      "deprecated_value": "",
+      "help": "",
+      "type": "bool",
+      "options": "",
+      "group": 9,
+      "flag": 1
+    },
+    {
+      "key": "s3_access_key_id",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 9,
+      "flag": 1
+    },
+    {
+      "key": "s3_secret_access_key",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 9,
+      "flag": 1
+    },
+    {
+      "key": "s3_buckets",
+      "value": "[]",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 9,
+      "flag": 1
+    },
+    {
+      "key": "aria2_uri",
+      "value": "http://localhost:6800/jsonrpc",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 5,
+      "flag": 1
+    },
+    {
+      "key": "aria2_secret",
+      "value": "",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 5,
+      "flag": 1
+    },
+    {
+      "key": "qbittorrent_url",
+      "value": "http://admin:adminadmin@localhost:8080/",
+      "deprecated_value": "",
+      "help": "",
+      "type": "string",
+      "options": "",
+      "group": 5,
+      "flag": 1
+    },
+    {
+      "key": "qbittorrent_seedtime",
+      "value": "0",
+      "deprecated_value": "",
+      "help": "",
+      "type": "number",
+      "options": "",
+      "group": 5,
+      "flag": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "",
+      "base_path": "/",
+      "role": 2,
+      "disabled": false,
+      "permission": 0,
+      "sso_id": ""
+    },
+    {
+      "id": 2,
+      "username": "guest",
+      "password": "",
+      "base_path": "/",
+      "role": 1,
+      "disabled": false,
+      "permission": 0,
+      "sso_id": ""
+    }
+  ],
+  "storages": [
+    {
+      "id": 1,
+      "mount_path": "/动漫",
+      "order": 0,
+      "driver": "PikPak",
+      "cache_expiration": 30,
+      "status": "work",
+      "addition": "{\"root_folder_id\":\"\",\"username\":\"d342jxc@gmail.com\",\"password\":\"248651793qp\",\"disable_media_link\":true}",
+      "remark": "",
+      "modified": "2024-03-15T06:23:51.66970821Z",
+      "disabled": false,
+      "enable_sign": true,
+      "order_by": "",
+      "order_direction": "desc",
+      "extract_folder": "front",
+      "web_proxy": true,
+      "webdav_policy": "native_proxy",
+      "down_proxy_url": ""
+    }
+  ],
+  "metas": []
+}
