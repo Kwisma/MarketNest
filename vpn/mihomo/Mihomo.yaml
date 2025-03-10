@@ -416,7 +416,7 @@ proxy-groups:
   # 地区分组
   - { name: 🇭🇰香港, <<: *u, filter: '(?i)🇭🇰|\bHK\b|香港|Hong Kong' }
 
-  - { name: 🇹🇼台湾, <<: *u, filter: '(?i)🇹🇼|\bTW\b|台湾|Taiwan' }
+  - { name: 🇹🇼台湾, <<: *u, filter: '(?i)🇹🇼|\bTW\b|台湾|Taiwan|Tai wan|' }
 
   - { name: 🇯🇵日本, <<: *u, filter: '(?i)🇯🇵|\bJP\b|日本|Japan' }
 
@@ -470,9 +470,9 @@ proxy-groups:
 
   - { name: 🇲🇳蒙古, <<: *u, filter: '(?i)🇲🇳|\bMN\b|蒙古|Mongolia' }
 
-  - { name: 🌐其它地区, <<: *u, type: select, filter: (?i)^(?!.*(?:🇨🇳|\bCN\b|中国|China|
+  - { name: 🌐其它地区, <<: *u, type: select, filter: '(?i)^(?!.*(?:🇨🇳|\bCN\b|中国|China|
         🇭🇰|\bHK\b|香港|Hong Kong|
-        🇹🇼|\bTW\b|台湾|Taiwan|
+        🇹🇼|\bTW\b|台湾|Taiwan|Tai wan|
         🇯🇵|\bJP\b|日本|Japan|
         🇺🇸|\bUS\b|美国|United States|
         🇸🇬|\bSG\b|新加坡|Singapore|
@@ -498,7 +498,7 @@ proxy-groups:
         🇲🇴|\bMO\b|澳门|Macau|
         🇵🇭|\bPH\b|菲律宾|Philippines|
         🇹🇭|\bTH\b|泰国|Thailand|
-        🇲🇳|\bMN\b|蒙古|Mongolia)).*$ }
+        🇲🇳|\bMN\b|蒙古|Mongolia)).*$' }
 
 rules:
   # 广告拦截
