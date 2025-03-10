@@ -186,7 +186,7 @@ dns:
   default-nameserver:
     - tls://223.5.5.5 # 阿里 DNS 解析 DNS 域名
     - tls://223.6.6.6 # 阿里 DNS 解析 DNS 域名
-  enhanced-mode: redir-host # 启用增强模式 redir-host ro fake-ip
+  enhanced-mode: redir-host # 启用增强模式 redir-host or fake-ip
   fake-ip-range: 10.10.10.1/16 # fake-ip 池设置
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
