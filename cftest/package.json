@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@maxmind/geoip2-node": "^5.0.0",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  }
+}
