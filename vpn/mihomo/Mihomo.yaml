@@ -424,6 +424,8 @@ proxy-groups:
   - { name: GoogleDrive, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB+klEQVR4AWJwL/ChKx68ForXW7SJN1iswYb5GyxaqGqhycrgR+rTAKzUA2hoURwG8Cn3bL/wbNuIz7Y5p9kOY57NMBvZs23bPtt/dW7b4VR94ep3v6OHaJvFJSoaZldQROB+hDJValcFPBj20vB82AsEAYCVyTT1uUykaWitGAQIB1oy22WoKOhKQMCCMKa0dLypYN9dTs7HcMvg5YCAHQKAzLmwpwpYGbORBHH2LAfMY4G4JdmOaJkvBQnsMQ+DHAl5MTSeqjaMASaarvZ00SB8UATCyp1OVzMWgfBDiwLhY7J2+Nn5LScyVCkUfkoI3nLqWivAcB7j52HYSISMEJz9WIwEyyE/AAtEBJLbRLoNiBxigIcVgDO08AwFwnkpwfx4Sx1aSFrmLwAvRDz+BBtaFB6Gg9txA9sEg6d9NLNO+/5HvFz0sXXardmy567d4CFW4F5V1BuXiUgVNBa5jpdEBdz2vTRy2/cyxMtduyFpTjtMotobD1D75Yvs3LjopYDwh9v/5CNWrtsOSjGc/8bFqP/mHtRx7zyVodP7tisgZMeffB8SO6xfLYeIlllvTSkM2jH34UraQeB5VkvexoeWWsttR7bEaPu9Cz95IEZbAVw8wm461+7uuXrp4Q0L6LxxS/NKQQ+t2HpYKEKQPMhXkpkNqoYwXTEA+kphQitc/vYAAAAASUVORK5CYII=" }
   - { name: GoogleEarth, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAXVBMVEVHcEzi7vzk7/vt8/n39vZniNK11v/H4//Z6vzv8/f29vWy1f+axf+Vwf+Luf6Kufx6rPtOjfZKivVhmvh6rPpQjvVEhvSNvP5DhO88eeotZd0rZNEnYdspX9EnXNGKIiMYAAAAH3RSTlMALnSgsBmj//////////+e/////3Gu/66d/v80/5OvsiUU+QAAASxJREFUeAGVjtGSgyAMALEWbSVQiT2uqvT/P/MScqBWX7p5YWZ3QtRXVJf6eq0v1bnVTZu43buu1kdftzeyknSUfC5vDQAY0wp3SqqdNxYIa8GcFhUU7H/R7YpV85K1yL6BXWE+L9UknHPZSyFnaMU8oPeI6PuSlENlBQzoGfRk5YxSsK968gK69ROhouDpV1C8dTm48Akbjx6sNK3QUPDjN+AAVjDHAJnQ5wJMa+CXgpf3YRzHlNAEm3E0j3TkODHBY8LbDU8KZpwSy0nhZkXIAiKwDjQO5APrFROnDKI0YeAEnH8pRk8FtgIOAz21SsR9IREjC4hphU4ojCqjF3ZLmhGL16owi6RZKAnIeprVBp3twvC6Ras9UWwmqgM6brRWp8wxvt8xzuob/gCnVSzVcGJ2AwAAAABJRU5ErkJggg==" }
   - { name: GoogleVoice, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA4CAMAAABuU5ChAAAAjVBMVEX///80qFMAgy0AgCoAdwD8/v0AgCPt9e+u17crpk0QoD7w+PEupk8qnkkjl0JGrWAjpEi02ry/38ZQsWim07DQ59Xg7+OUy6Ce0KnG4szZ7N1muHqCw5EAnzlhtnV1voYVjTdztoFAklEWhzYmiz9OmVxxqnyawJ/D2MYAfBeKt5F9sIVbnmY3kEuIwpUvM8zcAAACQklEQVRIiZXW62KqMAwA4JabUipE8e4Qt7k55s7e//FOwQFpGlDzs+Gj6RWEGIvJIcsPL8tVOPqUG1kspY4BiuOcza/L7LBym0PDbqFBbdxOFyrWuliOOBOg6AO7okk47bYzMp/gbAJ/7Q4kTmqFB1N2WQqpM0/087MuUPPyjkOwxEkbMk52pSq7eXrHSXWbnBXIYcg5nTepLc0hGJ5O6cyB0IzlVTuFdDCMPM/3T5Sqeue8pe4I5siZ8E+kw43JvfsMTCxnpN1l3aFpdCAsiCMQprVzoetsWE/pmYEqdJzn4QeKUHz4DiwWgnF4cmAnPpschqpltsOVxltx+Zvr1OmNONyhLsVX5VlQ7cSA85E7ikngYYgZdWgsmVl43G4daOKsQoX47hc3BftSC6sBVy/gPugS1UbY8RlYobrYC1zozDp8dUysSNpocpd2Rmfk1N6JMEDrWjwBrxHaDk/Aegn7XfQEvEZ48z0+xrCyjuXjcGpfho/DXI/DRSZfODexb20Kp4WWcGQrHYO3JBw4WMaDsH0nlBzM9ADsS4FfbojkA9NCPAK1ZeBKcdAeuPsPYGLHQGe+uB+ZBYXwSotHt+QITCPmo8P8IJFSU5/56MjmkqCxB40Z97WSas0tRxZjxkENCQNFqTDjYMzucTFXGjEGanaLm1pzQMyFQO/ZLqbB4KfBlJkPMfOTeLUkhvxB7Iu9BhUHFT8pKMLLexCRWQXg9pkT6+9zUFVRczGnMSjJnQc+kq/L9eftfP738zvvN8p/7j4j7yZAoB0AAAAASUVORK5CYII=" }
+  - { name: Gfw, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAANlBMVEVHcEwyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkgyPkiUjvXoAAAAEnRSTlMATpPJ7dSfYQx+Kv8adL2wPuALWl1eAAABIUlEQVR4AY2RBYJdIRTFwuOiB93/Zlu+V2eCExy+ibu8WYgpcyCVyoMcJclbOHnl9LTMnS7vNOiBrnJp8sHQwgL0k5TzVuaJVz59d8n2MF/2EqALKEcuVfAGh3oaSzwlFgEVDmECU0MPwjbACaCJOqRQXM0l0Faf0nZYB8qOmlUOHgcCuaIdT31oZ7Lqp0wQJUAeqOJDWjl1NdA/qdAOTvUUJeSfebbrNDIwO9DUPve8ddmRhq9ofcrFrEVAUS4yXW+5tBWwU3cq4Kak7beNIMn3RlMEmjb4RV6pD+vJNRiVog4gOUzxvWySWjYtgCENhqw95JTlIun511LaUjqympRMUuNO1J0jw726M0/W/k12PlnRJMpmSz7xJ5VWqY3v8QNj0RALKh/5HwAAAABJRU5ErkJggg==" }
+  - { name: Media, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAgVBMVEUgISQbFSMfHSRNdTSD1UtFaDEcGCN+zElimz0UACFinD0OAB9XiDldkjsfHyRajToYDSIYCiIZDyIFAB50u0UdGiN5xEd7x0hmoj99ykl/zko8YCYsRx0xTyA1ViNKeC4jJiVNfS9CaykAAAApQRw/Zid3wUYAAAkWIxMdLxY/XS8xCzUBAAAA3ElEQVR4AdWRVXbEMAwAl2KFOVLkMMP977eMfv1uu2P2mL35S7a77auiuv1BE5eK0A571QoNdONSMUw4j1KtZTuGEIZjW2en4LqG7WmaZxuuqxg/CMMwigHi6FwJ/HeX6EgX8F7oyWt2kDIyADAzIgIjp8FT7iRylhd5WeWElFeMIJ6r1oDUtF3f2l3KaecQQu2+SWTqGkndIIeOUJU4dhVDOckpg58lpV3TpcpMeZfI0zQxIsqXDOkiZ5uQq6W6SArd15dIIpJwzuCay/ePCVb9gzX4+BP/A7H5Qk71kxdp3ktrTwAAAABJRU5ErkJggg==" }
 
   # 地区分组
   - { name: 🇭🇰香港, <<: *u, filter: '(?i)🇭🇰|\bHK\b|香港|Hong Kong' }
@@ -571,7 +573,7 @@ rules:
   - RULE-SET,AppleTV,AppleTV # Apple TV+ 影视订阅服务
   - RULE-SET,Apple,Apple # Apple 相关服务的总规则
 
-  # 其他互联网公司及服务
+  # 国外分流
   - RULE-SET,PikPak,PikPak # PikPak 云存储
   - RULE-SET,GoogleDrive,GoogleDrive # Google Drive 云存储
   - RULE-SET,GoogleEarth,GoogleEarth # Google Earth 地图服务
@@ -626,9 +628,6 @@ rules:
   - RULE-SET,Pixiv,Pixiv # P站（Pixiv插画社区）
   - RULE-SET,Wikipedia,Wikipedia # 维基百科，自由的百科全书
   - RULE-SET,Twitch,Twitch # Twitch 直播平台
-  - RULE-SET,Cloudflare,Cloudflare # Cloudflare CDN 及安全服务
-
-  # 游戏相关
   - RULE-SET,Blizzard,Blizzard # 暴雪游戏 (如魔兽世界)
   - RULE-SET,Steam,Steam # Steam 游戏商店及社区
   - RULE-SET,Rockstar,Rockstar # Rockstar 游戏 (如 GTA)
@@ -639,6 +638,12 @@ rules:
   - RULE-SET,Sony,Sony # Sony 相关服务
   - RULE-SET,NGA,NGA # NGA 论坛 (游戏社区)
   - RULE-SET,HoYoverse,HoYoverse # 米哈游 (如原神)
+  - RULE-SET,Cloudflare,Cloudflare # Cloudflare CDN 及安全服务
+  - RULE-SET,Category-anticensorship,Gfw # 反审查相关规则集，适用于翻墙和自由访问互联网
+  - RULE-SET,Category-media,Media # 媒体相关规则集，适用于流媒体解锁
+  - RULE-SET,Geolocation-!cn,Gfw # 国际网络
+  - RULE-SET,Proxy,Gfw # 代理
+  - RULE-SET,Gfw,Gfw # Gfw 防火墙
 
   # CIDR
 #  - RULE-SET,Cloudflarecidr,Cloudflare,no-resolve # Cloudflare
@@ -648,14 +653,6 @@ rules:
 #  - RULE-SET,Netflixcidr,Netflix,no-resolve # Netflix
 #  - RULE-SET,Twittercidr,Twitter,no-resolve # Twitter
 #  - RULE-SET,Torcidr,Tor,no-resolve # Tor
-
-  # 国外分流
-  - RULE-SET,Category-anticensorship,🚀节点选择 # 反审查相关规则集，适用于翻墙和自由访问互联网
-  - RULE-SET,Category-media,🚀节点选择 # 媒体相关规则集，适用于流媒体解锁
-  - RULE-SET,Geolocation-!cn,🚀节点选择 # 国际网络
-  - RULE-SET,Gfw,🚀节点选择 # Gfw 防火墙
-  - RULE-SET,Proxy,🚀节点选择 # 代理
-  - RULE-SET,Blacklist,🚀节点选择 # 黑名单
 
   # 国内分流
   - RULE-SET,PrivateTracker,🎯全球直连 # 私有跟踪器，通常用于 BT 下载和种子分享
@@ -690,8 +687,6 @@ rules:
   - RULE-SET,115,🎯全球直连 # 115 网盘，云存储服务
   - RULE-SET,4399,🎯全球直连 # 4399，网页游戏和小游戏平台
   - RULE-SET,ChinaMedia,🎯全球直连 # 中国主流媒体
-
-  # 全球直连
   - RULE-SET,CN,🎯全球直连 # 中国域名
   - RULE-SET,CNcidr,🎯全球直连,no-resolve # 中国网络
 
@@ -1397,8 +1392,3 @@ rule-providers:
     url: "https://jsd.onmicrosoft.cn/gh/antn0000/fenliu@main/4GTV.list"
     path: ./ruleset/4GTV.text
     format: text
-
-  Blacklist:
-    <<: *domain
-    url: "https://jsd.onmicrosoft.cn/gh/Xeknoz/blacklist-rules@main/Clash/BlacklistRules_DomainOnly.yaml"
-    path: ./ruleset/Blacklist.yaml
