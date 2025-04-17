@@ -552,7 +552,6 @@ rules:
   - RULE-SET,Privatecidr,🎯全球直连,no-resolve # 局域网相关规则
 
   # Apple 相关服务
-  - RULE-SET,Apple,Apple # Apple 相关服务的总规则
   - RULE-SET,AppStore,Apple # App Store 应用商店
   - RULE-SET,iCloud,Apple # iCloud 云存储服务
   - RULE-SET,SystemOTA,Apple # iOS/macOS 系统更新 (OTA)
@@ -570,6 +569,7 @@ rules:
   - RULE-SET,AppleProxy,Apple # Apple 代理相关流量
   - RULE-SET,Beats,Apple # Beats 耳机及音频服务
   - RULE-SET,AppleTV,AppleTV # Apple TV+ 影视订阅服务
+  - RULE-SET,Apple,Apple # Apple 相关服务的总规则
 
   # 其他互联网公司及服务
   - RULE-SET,PikPak,PikPak # PikPak 云存储
@@ -578,6 +578,8 @@ rules:
   - RULE-SET,GoogleFCM,GoogleFCM # Google Firebase Cloud Messaging (推送)
   - RULE-SET,GoogleVoice,GoogleVoice # Google Voice 语音服务
   - RULE-SET,Chromecast,Google # Google Chromecast 投屏
+  - RULE-SET,Scholar,Scholar # Google Scholar 学术搜索
+  - RULE-SET,Gemini,OpenAI # Google Gemini AI
   - RULE-SET,Google,Google # Google 相关服务
   - RULE-SET,TikTok,TikTok # TikTok 短视频平台
   - RULE-SET,YouTube,YouTube # YouTube 视频平台
@@ -588,11 +590,9 @@ rules:
   - RULE-SET,Telegram,Telegram # Telegram 即时通讯
   - RULE-SET,OpenAI,OpenAI # OpenAI 相关服务
   - RULE-SET,Claude,OpenAI # Claude AI 聊天机器人
-  - RULE-SET,Gemini,OpenAI # Google Gemini AI
   - RULE-SET,GitHub,GitHub # GitHub 代码托管平台
   - RULE-SET,Facebook,Facebook # Facebook 社交网络
   - RULE-SET,Netflix,Netflix # Netflix 影视流媒体
-  - RULE-SET,Cloudflare,Cloudflare # Cloudflare CDN 及安全服务
   - RULE-SET,Disney,Disney # Disney+ 影视订阅服务
   - RULE-SET,Bahamut,Bahamut # 巴哈姆特 ACG 论坛
   - RULE-SET,Hulu,Hulu # Hulu 影视流媒体
@@ -615,7 +615,6 @@ rules:
   - RULE-SET,MicrosoftEdge,Microsoft # Microsoft Edge 浏览器
   - RULE-SET,OneDrive,Microsoft # OneDrive 云存储
   - RULE-SET,Copilot,OpenAI # Microsoft Copilot AI 助手
-  - RULE-SET,Scholar,Scholar # Google Scholar 学术搜索
   - RULE-SET,Intel,Intel # Intel 相关服务
   - RULE-SET,Qobuz,Qobuz # Qobuz 音乐流媒体
   - RULE-SET,Pandora,Pandora # Pandora 音乐流媒体
@@ -627,6 +626,7 @@ rules:
   - RULE-SET,Pixiv,Pixiv # P站（Pixiv插画社区）
   - RULE-SET,Wikipedia,Wikipedia # 维基百科，自由的百科全书
   - RULE-SET,Twitch,Twitch # Twitch 直播平台
+  - RULE-SET,Cloudflare,Cloudflare # Cloudflare CDN 及安全服务
 
   # 游戏相关
   - RULE-SET,Blizzard,Blizzard # 暴雪游戏 (如魔兽世界)
