@@ -87,14 +87,14 @@ global-ua: clash.meta # 自定全局 UA
 etag-support: true # 外部资源下载的 ETag 支持
 log-level: info # 日志等级
 ipv6: true # 启用 IPv6
-tls: # TLS 相关配置
-  certificate: string # TLS 证书
-  private-key: string # TLS 私钥
-  custom-certifactes: # 自定义证书
-    - |
-      -----BEGIN CERTIFICATE-----
-      format/pem...
-      -----END CERTIFICATE-----
+#tls: # TLS 相关配置
+#  certificate: string # TLS 证书
+#  private-key: string # TLS 私钥
+#  custom-certifactes: # 自定义证书
+#    - |
+#      -----BEGIN CERTIFICATE-----
+#      format/pem...
+#      -----END CERTIFICATE-----
 
 external-controller: 0.0.0.0:9093 # 外部控制端口
 external-controller-tls: 0.0.0.0:9443 # TLS 外部控制端口
