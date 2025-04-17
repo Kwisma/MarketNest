@@ -851,7 +851,7 @@ rule-providers:
   Hulu:
     <<: *classical
     url: "https://jsd.onmicrosoft.cn/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Hulu/Hulu.yaml"
-    path: ./ruleset/HuluJP.yaml
+    path: ./ruleset/Hulu.yaml
 
   TVB:
     <<: *classical
