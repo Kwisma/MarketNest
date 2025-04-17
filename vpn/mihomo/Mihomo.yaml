@@ -575,14 +575,6 @@ rules:
 
   # 国外分流
   - RULE-SET,PikPak,PikPak # PikPak 云存储
-  - RULE-SET,GoogleDrive,GoogleDrive # Google Drive 云存储
-  - RULE-SET,GoogleEarth,GoogleEarth # Google Earth 地图服务
-  - RULE-SET,GoogleFCM,GoogleFCM # Google Firebase Cloud Messaging (推送)
-  - RULE-SET,GoogleVoice,GoogleVoice # Google Voice 语音服务
-  - RULE-SET,Chromecast,Google # Google Chromecast 投屏
-  - RULE-SET,Scholar,Scholar # Google Scholar 学术搜索
-  - RULE-SET,Gemini,OpenAI # Google Gemini AI
-  - RULE-SET,Google,Google # Google 相关服务
   - RULE-SET,TikTok,TikTok # TikTok 短视频平台
   - RULE-SET,YouTube,YouTube # YouTube 视频平台
   - RULE-SET,YouTubeMusic,YouTubeMusic # YouTube Music 音乐流媒体
@@ -603,11 +595,10 @@ rules:
   - RULE-SET,TVB,TVB # TVB 香港电视台
   - RULE-SET,Niconico,Niconico # Niconico 日本弹幕视频
   - RULE-SET,AbemaTV,AbemaTV # AbemaTV 日本网络电视
+  - RULE-SET,AmazonPrimeVideo,AmazonPrimeVideo # 亚马逊 Prime Video 影视订阅
   - RULE-SET,Adobe,Adobe # Adobe 相关服务 (如 Creative Cloud)
   - RULE-SET,Docker,Docker # Docker 容器服务
   - RULE-SET,IMDB,IMDB # IMDB 电影数据库
-  - RULE-SET,AmazonPrimeVideo,AmazonPrimeVideo # 亚马逊 Prime Video 影视订阅
-  - RULE-SET,Amazon,Amazon # 亚马逊电商
   - RULE-SET,Instagram,Instagram # Instagram 社交平台
   - RULE-SET,LastFM,LastFM # Last.fm 音乐推荐
   - RULE-SET,PayPal,PayPal # PayPal 在线支付
@@ -638,6 +629,15 @@ rules:
   - RULE-SET,Sony,Sony # Sony 相关服务
   - RULE-SET,NGA,NGA # NGA 论坛 (游戏社区)
   - RULE-SET,HoYoverse,HoYoverse # 米哈游 (如原神)
+  - RULE-SET,Amazon,Amazon # 亚马逊电商
+  - RULE-SET,GoogleDrive,GoogleDrive # Google Drive 云存储
+  - RULE-SET,GoogleEarth,GoogleEarth # Google Earth 地图服务
+  - RULE-SET,GoogleFCM,GoogleFCM # Google Firebase Cloud Messaging (推送)
+  - RULE-SET,GoogleVoice,GoogleVoice # Google Voice 语音服务
+  - RULE-SET,Chromecast,Google # Google Chromecast 投屏
+  - RULE-SET,Scholar,Scholar # Google Scholar 学术搜索
+  - RULE-SET,Gemini,OpenAI # Google Gemini AI
+  - RULE-SET,Google,Google # Google 相关服务
   - RULE-SET,Cloudflare,Cloudflare # Cloudflare CDN 及安全服务
   - RULE-SET,Category-anticensorship,Gfw # 反审查相关规则集，适用于翻墙和自由访问互联网
   - RULE-SET,Category-media,Media # 媒体相关规则集，适用于流媒体解锁
