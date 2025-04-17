@@ -421,6 +421,9 @@ proxy-groups:
   - { name: Wikipedia, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b+u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz/6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1+flswMu1EQZ3xlE7lK8eKDkjtwE+crBMV+wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk/9ryhFMAAAAASUVORK5CYII=" }
   - { name: Twitch, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAsUlEQVR4AWLABwDt1QEGhVAQRuEtvCW8pQRd7ap2UAkBRCsJCGgJLWUiGJBTpl9wh4HQ+eK6DcnqPpkp1iuSOO/j+EvjAIqrARDXAyD+AQAODb4Qn8cBGZABGRCfDFjGDwHr7O9qkzV6AMcVAIiX1nlRAIAvn7yGAN6rkC/HgwCI+25tYT8JIB4PAG7Ed48LABiv7M9VBujjASDE9IAN4gIAnG7pwKWiH7jL9XP+xQRzAMxy9yqv9OarAAAAAElFTkSuQmCC" }
   - { name: GoogleFCM, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABYElEQVR4Ab3WAUQDURgH8A8ACCAABHLBIACCUBAkgIAgIkEAhIEkgEBAIEAER5ZgAImupYCSAoHD3u5ve3O3P7f/vb0Nf87s/O5777vvnm0ebS80QTe9J9bqJZZFAwXMIcX17VzBz8SWPFZC23MDe6v2AoRR24kOfm3ZHmMVtKWB+t79EFRNLoJ6owjJYoFtARM6VwTx5CLoczgr6Jrm79SWJRB/dI92X+R1lJvvXXNvK0gjtCuBAFzH3DhpkcthPKyiaLapIBDKufU9+rsPNLyBJqvbIOzJg0GV5vVgxw6AUK4JlavE/K0DT7hCgEKVMsgVMpgy+H8cDPIeKlXmZxqodiknDQK7CvigVKksKT5p08E7W2OwhOpNk0uThqcNB1V6TJ0yDPLSZnVL+7HOFfI5Rwd5P3kf/ZhD+NPUEOR3M61i5W7FfuKAhWWMeohyF3ZV5Bkogmv8hkaLf0yMlAG6buWX70J8MQAAAABJRU5ErkJggg==" }
+  - { name: GoogleDrive, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAB+klEQVR4AWJwL/ChKx68ForXW7SJN1iswYb5GyxaqGqhycrgR+rTAKzUA2hoURwG8Cn3bL/wbNuIz7Y5p9kOY57NMBvZs23bPtt/dW7b4VR94ep3v6OHaJvFJSoaZldQROB+hDJValcFPBj20vB82AsEAYCVyTT1uUykaWitGAQIB1oy22WoKOhKQMCCMKa0dLypYN9dTs7HcMvg5YCAHQKAzLmwpwpYGbORBHH2LAfMY4G4JdmOaJkvBQnsMQ+DHAl5MTSeqjaMASaarvZ00SB8UATCyp1OVzMWgfBDiwLhY7J2+Nn5LScyVCkUfkoI3nLqWivAcB7j52HYSISMEJz9WIwEyyE/AAtEBJLbRLoNiBxigIcVgDO08AwFwnkpwfx4Sx1aSFrmLwAvRDz+BBtaFB6Gg9txA9sEg6d9NLNO+/5HvFz0sXXardmy567d4CFW4F5V1BuXiUgVNBa5jpdEBdz2vTRy2/cyxMtduyFpTjtMotobD1D75Yvs3LjopYDwh9v/5CNWrtsOSjGc/8bFqP/mHtRx7zyVodP7tisgZMeffB8SO6xfLYeIlllvTSkM2jH34UraQeB5VkvexoeWWsttR7bEaPu9Cz95IEZbAVw8wm461+7uuXrp4Q0L6LxxS/NKQQ+t2HpYKEKQPMhXkpkNqoYwXTEA+kphQitc/vYAAAAASUVORK5CYII=" }
+  - { name: GoogleEarth, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAXVBMVEVHcEzi7vzk7/vt8/n39vZniNK11v/H4//Z6vzv8/f29vWy1f+axf+Vwf+Luf6Kufx6rPtOjfZKivVhmvh6rPpQjvVEhvSNvP5DhO88eeotZd0rZNEnYdspX9EnXNGKIiMYAAAAH3RSTlMALnSgsBmj//////////+e/////3Gu/66d/v80/5OvsiUU+QAAASxJREFUeAGVjtGSgyAMALEWbSVQiT2uqvT/P/MScqBWX7p5YWZ3QtRXVJf6eq0v1bnVTZu43buu1kdftzeyknSUfC5vDQAY0wp3SqqdNxYIa8GcFhUU7H/R7YpV85K1yL6BXWE+L9UknHPZSyFnaMU8oPeI6PuSlENlBQzoGfRk5YxSsK968gK69ROhouDpV1C8dTm48Akbjx6sNK3QUPDjN+AAVjDHAJnQ5wJMa+CXgpf3YRzHlNAEm3E0j3TkODHBY8LbDU8KZpwSy0nhZkXIAiKwDjQO5APrFROnDKI0YeAEnH8pRk8FtgIOAz21SsR9IREjC4hphU4ojCqjF3ZLmhGL16owi6RZKAnIeprVBp3twvC6Ras9UWwmqgM6brRWp8wxvt8xzuob/gCnVSzVcGJ2AwAAAABJRU5ErkJggg==" }
+  - { name: GoogleVoice, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA4CAMAAABuU5ChAAAAjVBMVEX///80qFMAgy0AgCoAdwD8/v0AgCPt9e+u17crpk0QoD7w+PEupk8qnkkjl0JGrWAjpEi02ry/38ZQsWim07DQ59Xg7+OUy6Ce0KnG4szZ7N1muHqCw5EAnzlhtnV1voYVjTdztoFAklEWhzYmiz9OmVxxqnyawJ/D2MYAfBeKt5F9sIVbnmY3kEuIwpUvM8zcAAACQklEQVRIiZXW62KqMAwA4JabUipE8e4Qt7k55s7e//FOwQFpGlDzs+Gj6RWEGIvJIcsPL8tVOPqUG1kspY4BiuOcza/L7LBym0PDbqFBbdxOFyrWuliOOBOg6AO7okk47bYzMp/gbAJ/7Q4kTmqFB1N2WQqpM0/087MuUPPyjkOwxEkbMk52pSq7eXrHSXWbnBXIYcg5nTepLc0hGJ5O6cyB0IzlVTuFdDCMPM/3T5Sqeue8pe4I5siZ8E+kw43JvfsMTCxnpN1l3aFpdCAsiCMQprVzoetsWE/pmYEqdJzn4QeKUHz4DiwWgnF4cmAnPpschqpltsOVxltx+Zvr1OmNONyhLsVX5VlQ7cSA85E7ikngYYgZdWgsmVl43G4daOKsQoX47hc3BftSC6sBVy/gPugS1UbY8RlYobrYC1zozDp8dUysSNpocpd2Rmfk1N6JMEDrWjwBrxHaDk/Aegn7XfQEvEZ48z0+xrCyjuXjcGpfho/DXI/DRSZfODexb20Kp4WWcGQrHYO3JBw4WMaDsH0nlBzM9ADsS4FfbojkA9NCPAK1ZeBKcdAeuPsPYGLHQGe+uB+ZBYXwSotHt+QITCPmo8P8IJFSU5/56MjmkqCxB40Z97WSas0tRxZjxkENCQNFqTDjYMzucTFXGjEGanaLm1pzQMyFQO/ZLqbB4KfBlJkPMfOTeLUkhvxB7Iu9BhUHFT8pKMLLexCRWQXg9pkT6+9zUFVRczGnMSjJnQc+kq/L9eftfP738zvvN8p/7j4j7yZAoB0AAAAASUVORK5CYII=" }
 
   # 地区分组
   - { name: 🇭🇰香港, <<: *u, filter: '(?i)🇭🇰|\bHK\b|香港|Hong Kong' }
@@ -540,7 +543,7 @@ rules:
   - RULE-SET,BlockHttpDNS,🚫广告拦截
   - RULE-SET,Advertising,🚫广告拦截
   - RULE-SET,Category-httpdns-cn,🚫广告拦截
-  - RULE-SET,Category-ads-all,🚫广告拦截
+  - RULE-SET,Reject,🚫广告拦截
 
   # 局域网
   - RULE-SET,Lan,🎯全球直连 # 私有网相关规则
@@ -570,12 +573,12 @@ rules:
 
   # 其他互联网公司及服务
   - RULE-SET,PikPak,PikPak # PikPak 云存储
-  - RULE-SET,Google,Google # Google 相关服务
-  - RULE-SET,GoogleDrive,Google # Google Drive 云存储
-  - RULE-SET,GoogleEarth,Google # Google Earth 地图服务
+  - RULE-SET,GoogleDrive,GoogleDrive # Google Drive 云存储
+  - RULE-SET,GoogleEarth,GoogleEarth # Google Earth 地图服务
   - RULE-SET,GoogleFCM,GoogleFCM # Google Firebase Cloud Messaging (推送)
-  - RULE-SET,GoogleVoice,Google # Google Voice 语音服务
+  - RULE-SET,GoogleVoice,GoogleVoice # Google Voice 语音服务
   - RULE-SET,Chromecast,Google # Google Chromecast 投屏
+  - RULE-SET,Google,Google # Google 相关服务
   - RULE-SET,TikTok,TikTok # TikTok 短视频平台
   - RULE-SET,YouTube,YouTube # YouTube 视频平台
   - RULE-SET,YouTubeMusic,YouTubeMusic # YouTube Music 音乐流媒体
@@ -1305,11 +1308,6 @@ rule-providers:
     url: "https://jsd.onmicrosoft.cn/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-httpdns-cn.yaml"
     path: ./ruleset/Category-httpdns-cn.yaml
 
-  Category-ads-all:
-    <<: *domain
-    url: "https://jsd.onmicrosoft.cn/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ads-all.yaml"
-    path: ./ruleset/Category-ads-all.yaml
-
   # ------------------------------------------------------------
   # Loyalsoldier 规则
   CN:
@@ -1346,6 +1344,11 @@ rule-providers:
     <<: *classical
     url: "https://jsd.onmicrosoft.cn/gh/Loyalsoldier/geoip@release/clash/classical/private.txt"
     path: ./ruleset/Privatecidr.yaml
+
+  Reject:
+    <<: *domain
+    url: "https://jsd.onmicrosoft.cn/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/Reject.yaml
 
 #  Cloudflarecidr:
 #    <<: *classical
