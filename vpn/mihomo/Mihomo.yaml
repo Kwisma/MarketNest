@@ -45,6 +45,7 @@ u: &u
   tolerance: 1 # 自动选择切换容差
   strategy: consistent-hashing # 负载均衡策略
   lazy: true # 懒惰状态
+  include-all-providers: true # 引入所有代理集合
   use:
     - provider # 使用第一个代理提供者
 
