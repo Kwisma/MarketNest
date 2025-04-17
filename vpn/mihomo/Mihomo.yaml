@@ -420,6 +420,7 @@ proxy-groups:
   - { name: Pixiv, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAY1BMVEUAl/oAlfoAkfoAk/qBvfzM4/1RqfsAj/p1t/uv0/3E3/211v2IwPzA2/3////u9f5ts/v6/P+jzfy92f0Ajfozn/rm8P7b6v4AkPrg7f5Bo/vM4v7Z6f5Kpvvz+P9stPuVxfywXB9eAAAApUlEQVR4Ac2SRQLDMAwEaxnC6zDT/1/ZhvncrNljlPR5qxixX8WJsxsmpOKGadmOy/gZkgftBxgVGmcYYZM07qEea4tuYEhxLIZOcoXjZeQPPX6B00ycAll+htpYHj50zzunGSMDivwC3WGKlwAcfoEwYzLKwRSKXSF0VQxNZTxbSPOrhYKZVXRjW81DmdZWY9x4Ba3BKb9zKOussOePkcD5wP6vL+2TC6RjvWsrAAAAAElFTkSuQmCC" }
   - { name: Wikipedia, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b+u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz/6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1+flswMu1EQZ3xlE7lK8eKDkjtwE+crBMV+wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk/9ryhFMAAAAASUVORK5CYII=" }
   - { name: Twitch, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAsUlEQVR4AWLABwDt1QEGhVAQRuEtvCW8pQRd7ap2UAkBRCsJCGgJLWUiGJBTpl9wh4HQ+eK6DcnqPpkp1iuSOO/j+EvjAIqrARDXAyD+AQAODb4Qn8cBGZABGRCfDFjGDwHr7O9qkzV6AMcVAIiX1nlRAIAvn7yGAN6rkC/HgwCI+25tYT8JIB4PAG7Ed48LABiv7M9VBujjASDE9IAN4gIAnG7pwKWiH7jL9XP+xQRzAMxy9yqv9OarAAAAAElFTkSuQmCC" }
+  - { name: GoogleFCM, <<: *pr, icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABYElEQVR4Ab3WAUQDURgH8A8ACCAABHLBIACCUBAkgIAgIkEAhIEkgEBAIEAER5ZgAImupYCSAoHD3u5ve3O3P7f/vb0Nf87s/O5777vvnm0ebS80QTe9J9bqJZZFAwXMIcX17VzBz8SWPFZC23MDe6v2AoRR24kOfm3ZHmMVtKWB+t79EFRNLoJ6owjJYoFtARM6VwTx5CLoczgr6Jrm79SWJRB/dI92X+R1lJvvXXNvK0gjtCuBAFzH3DhpkcthPKyiaLapIBDKufU9+rsPNLyBJqvbIOzJg0GV5vVgxw6AUK4JlavE/K0DT7hCgEKVMsgVMpgy+H8cDPIeKlXmZxqodiknDQK7CvigVKksKT5p08E7W2OwhOpNk0uThqcNB1V6TJ0yDPLSZnVL+7HOFfI5Rwd5P3kf/ZhD+NPUEOR3M61i5W7FfuKAhWWMeohyF3ZV5Bkogmv8hkaLf0yMlAG6buWX70J8MQAAAABJRU5ErkJggg==" }
 
   # 地区分组
   - { name: 🇭🇰香港, <<: *u, filter: '(?i)🇭🇰|\bHK\b|香港|Hong Kong' }
@@ -572,7 +573,7 @@ rules:
   - RULE-SET,Google,Google # Google 相关服务
   - RULE-SET,GoogleDrive,Google # Google Drive 云存储
   - RULE-SET,GoogleEarth,Google # Google Earth 地图服务
-  - RULE-SET,GoogleFCM,Google # Google Firebase Cloud Messaging (推送)
+  - RULE-SET,GoogleFCM,GoogleFCM # Google Firebase Cloud Messaging (推送)
   - RULE-SET,GoogleVoice,Google # Google Voice 语音服务
   - RULE-SET,Chromecast,Google # Google Chromecast 投屏
   - RULE-SET,TikTok,TikTok # TikTok 短视频平台
