@@ -1,0 +1,29 @@
+name: Delete
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - name: Configure Git
+      run: |
+        git config --local user.name "${{ github.actor }}"
+        git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+        # 创建一个临时分支来保存当前工作树的内容
+        git checkout --orphan branch
+        # 删除 main 分支的历史
+        git branch -D main
+        # 在此分支上添加初始提交
+        git add -A
+        git commit -am "commit message"
+        # 将 branch 重命名为 main
+        git branch -m main
+        git reflog expire --expire=now --all
+        git gc --prune=now
+        # 强制推送到远程以覆盖旧历史
+        git push origin main --force
