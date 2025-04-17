@@ -1340,7 +1340,7 @@ rule-providers:
   CNcidr:
     <<: *classical
     url: "https://jsd.onmicrosoft.cn/gh/Loyalsoldier/geoip@release/clash/classical/cn.txt"
-    path: ./ruleset/CN.yaml
+    path: ./ruleset/CNcidr.yaml
 
   Privatecidr:
     <<: *classical
