@@ -1310,6 +1310,11 @@ rule-providers:
     url: "https://jsd.onmicrosoft.cn/gh/Loyalsoldier/clash-rules@release/direct.txt"
     path: ./ruleset/CN.yaml
 
+  CNcidr:
+    <<: *classical
+    url: "https://jsd.onmicrosoft.cn/gh/Loyalsoldier/geoip@release/clash/classical/cn.txt"
+    path: ./ruleset/CNcidr.yaml
+
   Gfw:
     <<: *domain
     url: "https://jsd.onmicrosoft.cn/gh/Loyalsoldier/clash-rules@release/gfw.txt"
@@ -1387,8 +1392,3 @@ rule-providers:
     url: "https://jsd.onmicrosoft.cn/gh/antn0000/fenliu@main/4GTV.list"
     path: ./ruleset/4GTV.text
     format: text
-
-  CNcidr:
-    <<: *ipcidr
-    url: "https://jsd.onmicrosoft.cn/gh/Kwisma/ASN-List@main/country/CN/CIDR.CN.yaml"
-    path: ./ruleset/CNcidr.yaml
