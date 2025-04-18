@@ -644,6 +644,7 @@ rules:
   - RULE-SET,Geolocation-!cn,Gfw # 国际网络
   - RULE-SET,Proxy,Gfw # 代理
   - RULE-SET,Gfw,Gfw # Gfw 防火墙
+  - DOMAIN-REGEX,^us\.[a-zA-Z0-9.-]+,Gfw # 匹配us开头的域名
 
   # CIDR
 #  - RULE-SET,Cloudflarecidr,Cloudflare,no-resolve # Cloudflare
