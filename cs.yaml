@@ -1,0 +1,82 @@
+log:
+  disabled: false
+  level: info
+  output: ""
+  timestamp: false
+experimental:
+  clash_api:
+    external_controller: 0.0.0.0:20123
+    external_ui: ui
+    external_ui_download_url: https://ghfast.top/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+    external_ui_download_detour: 🎯 全球直连
+    secret: ""
+    default_mode: rule
+    access_control_allow_origin:
+      - http://127.0.0.1
+      - http://localhost
+      - https://yacd.metacubex.one
+      - https://d.metacubex.one
+      - https://board.zash.run.place
+    access_control_allow_private_network: true
+  cache_file:
+    enabled: true
+    path: cache.db
+    cache_id: ""
+    store_fakeip: true
+    store_rdrc: true
+    rdrc_timeout: 1d
+dns:
+  servers:
+    - { type: udp, tag: Ali-DNS-UDP, server: 223.5.5.5, server_port: 53 }
+    - { type: udp, tag: Google-DNS-UDP, server: 8.8.8.8, server_port: 53 }
+    - { type: https, tag: DIRECT-DNS, detour: 🎯 全球直连, server_port: 443, server: dns.alidns.com, domain_resolver: Ali-DNS-UDP }
+    - { type: https, tag: PROXY-DNS, detour: 🚀 节点选择, server_port: 443, server: dns.google, domain_resolver: Google-DNS-UDP }
+    - { type: fakeip, tag: FAKEIP-DNS, inet4_range: 198.18.0.0/15, inet6_range: fc00::/18 }
+  rules:
+    - { clash_mode: direct, server: DIRECT-DNS }
+    - { clash_mode: global, server: PROXY-DNS }
+    - { rule_set: [ Geosite-CN, fakeip_filter ], server: DIRECT-DNS, strategy: ipv4_only }
+    - { query_type: [ A, AAAA ], server: FAKEIP-DNS }
+  disable_cache: false
+  disable_expire: false
+  independent_cache: true
+  final: PROXY-DNS
+  strategy: prefer_ipv4
+inbounds:
+  - { type: tun, tag: tun-in, interface_name: utun0, address: [ 172.18.0.1/30, fdfe:dcba:9876::1/126 ], mtu: 9000, auto_route: true, strict_route: true, endpoint_independent_nat: false, stack: gvisor, platform: { http_proxy: { enabled: false, server: 127.0.0.1, server_port: 8080 } } }
+  - { tag: mixed-in, type: mixed, listen: 0.0.0.0, listen_port: 20120 }
+outbounds:
+  - { type: direct, tag: 🎯 全局直连 }
+  - { type: block, tag: 🚫 拒绝连接 }
+  - { type: selector, tag: 🚀 节点选择, outbounds: [ 🎈 自动选择, 🟢 手动选择, 🇭🇰 香港自动, 🇹🇼 台湾自动, 🇯🇵 日本自动, 🇺🇸 美国自动, 🇸🇬 新加坡自动, 🇩🇪 德国自动 ], filter: [ { action: all, keywords: [ "" ] } ] }
+  - { type: selector, tag: 🟢 手动选择, outbounds: [], filter: [ { action: all, keywords: [ "" ] } ] }
+  - { type: selector, tag: 🎯 全球直连, outbounds: [ 🎯 全局直连, 🚀 节点选择 ] }
+  - { type: selector, tag: 🪧 广告拦截, outbounds: [ 🚫 拒绝连接, 🎯 全局直连, 🚀 节点选择 ] }
+  - { type: urltest, tag: 🎈 自动选择, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: all, keywords: [ "" ] } ] }
+  - { type: urltest, tag: 🇭🇰 香港自动, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇭🇰|\bHK\b|香港|Hong Kong" ] } ] }
+  - { type: urltest, tag: 🇹🇼 台湾自动, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇼|\bTW\b|台湾|Taiwan|Tai wan" ] } ] }
+  - { type: urltest, tag: 🇯🇵 日本自动, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇯🇵|\bJP\b|日本|Japan" ] } ] }
+  - { type: urltest, tag: 🇺🇸 美国自动, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇺🇸|\bUS\b|美国|United States|CT" ] } ] }
+  - { type: urltest, tag: 🇸🇬 新加坡自动, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇬|\bSG\b|新加坡|Singapore" ] } ] }
+  - { type: urltest, tag: 🇩🇪 德国自动, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇩🇪|\bDE\b|德国|Germany" ] } ] }
+route:
+  rules:
+    - { action: sniff }
+    - { port: 53, action: hijack-dns }
+    - { ip_is_private: true, outbound: 🎯 全球直连 }
+    - { clash_mode: direct, outbound: 🎯 全球直连 }
+    - { clash_mode: global, outbound: 🚀 节点选择 }
+    - { rule_set: [ AWAvenue-Ads ], outbound: 🪧 广告拦截 }
+    - { rule_set: [ GeoSite-Private, GeoIP-Private, GeoIP-CN, fakeip_filter ], outbound: 🎯 全球直连 }
+  rule_set:
+    - { tag: AWAvenue-Ads, type: remote, url: https://testingcf.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Singbox.srs, format: binary, download_detour: 🚀 节点选择 }
+    - { tag: GeoIP-Private, type: remote, url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs, format: binary, download_detour: 🚀 节点选择 }
+    - { tag: GeoSite-Private, type: remote, url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs, format: binary, download_detour: 🚀 节点选择 }
+    - { tag: Geosite-CN, type: remote, url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs, format: binary, download_detour: 🚀 节点选择 }
+    - { tag: GeoIP-CN, type: remote, url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs, format: binary, download_detour: 🚀 节点选择 }
+    - { tag: fakeip_filter, type: remote, url: https://testingcf.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/fakeip-filter.srs, format: binary, download_detour: 🚀 节点选择 }
+  auto_detect_interface: true
+  final: 🚀 节点选择
+  default_domain_resolver:
+    server: DIRECT-DNS
+    strategy: ipv4_only
