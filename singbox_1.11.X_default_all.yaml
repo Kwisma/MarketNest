@@ -1,0 +1,644 @@
+# 额外参数说明：
+# 过滤器:
+# filter
+# filter.action 参数说明:·
+# all 添加全部节点，使用 all 时 filter.keywords 可为空
+# include 添加指定节点，必须填写 filter.keywords
+# exclude 排除指定节点，必须填写 filter.keywords
+# filter.action: all,
+# filter.keywords: []
+
+############ start of file ############
+# 锚点区
+proxy: &proxy { type: selector, outbounds: [ 🚀 节点选择, 🎯 全球直连, 🎈 自动选择, 🟢 手动选择, 🇦🇩 安道尔自动, 🇦🇪 阿联酋自动, 🇦🇫 阿富汗自动, 🇦🇬 安提瓜和巴布达自动, 🇦🇮 安圭拉自动, 🇦🇱 阿尔巴尼亚自动, 🇦🇲 亚美尼亚自动, 🇦🇴 安哥拉自动, 🇦🇷 阿根廷自动, 🇦🇸 美属萨摩亚自动, 🇦🇹 奥地利自动, 🇦🇺 澳大利亚自动, 🇦🇼 阿鲁巴自动, 🇦🇽 奥兰群岛自动, 🇦🇿 阿塞拜疆自动, 🇧🇦 波斯尼亚和黑塞哥维那自动, 🇧🇧 巴巴多斯自动, 🇧🇩 孟加拉国自动, 🇧🇪 比利时自动, 🇧🇫 布基纳法索自动, 🇧🇬 保加利亚自动, 🇧🇭 巴林自动, 🇧🇮 布隆迪自动, 🇧🇯 贝宁自动, 🇧🇱 法属圣巴泰勒米自动, 🇧🇲 百慕大自动, 🇧🇳 文莱达鲁萨兰国自动, 🇧🇴 玻利维亚自动, 🇧🇶 博内尔、圣尤斯特歇斯和萨巴自动, 🇧🇷 巴西自动, 🇧🇸 巴哈马自动, 🇧🇹 不丹自动, 🇧🇼 博茨瓦纳自动, 🇧🇾 白俄罗斯自动, 🇧🇿 伯利兹自动, 🇨🇦 加拿大自动, 🇨🇩 刚果民主共和国自动, 🇨🇫 中非共和国自动, 🇨🇬 刚果自动, 🇨🇭 瑞士自动, 🇨🇮 科特迪瓦自动, 🇨🇰 库克群岛自动, 🇨🇱 智利自动, 🇨🇲 喀麦隆自动, 🇨🇳 中国自动, 🇨🇴 哥伦比亚自动, 🇨🇷 哥斯达黎加自动, 🇨🇺 古巴自动, 🇨🇻 佛得角自动, 🇨🇼 库拉索自动, 🇨🇾 塞浦路斯自动, 🇨🇿 捷克自动, 🇩🇪 德国自动, 🇩🇯 吉布提自动, 🇩🇰 丹麦自动, 🇩🇲 多米尼克自动, 🇩🇴 多米尼加共和国自动, 🇩🇿 阿尔及利亚自动, 🇪🇨 厄瓜多尔自动, 🇪🇪 爱沙尼亚自动, 🇪🇬 埃及自动, 🇪🇷 厄立特里亚自动, 🇪🇸 西班牙自动, 🇪🇹 埃塞俄比亚自动, 🇪🇺 欧洲联盟自动, 🇫🇮 芬兰自动, 🇫🇯 斐济自动, 🇫🇰 福克兰群岛自动, 🇫🇲 密克罗尼西亚联邦自动, 🇫🇴 法罗群岛自动, 🇫🇷 法国自动, 🇬🇦 加蓬自动, 🇬🇧 英国自动, 🇬🇩 格林纳达自动, 🇬🇪 格鲁吉亚自动, 🇬🇫 法属圭亚那自动, 🇬🇬 格恩西岛自动, 🇬🇭 加纳自动, 🇬🇮 直布罗陀自动, 🇬🇱 格陵兰自动, 🇬🇲 冈比亚自动, 🇬🇳 几内亚自动, 🇬🇵 瓜德罗普自动, 🇬🇶 赤道几内亚自动, 🇬🇷 希腊自动, 🇬🇹 危地马拉自动, 🇬🇺 关岛自动, 🇬🇼 几内亚比绍自动, 🇬🇾 圭亚那自动, 🇭🇰 香港自动, 🇭🇳 洪都拉斯自动, 🇭🇷 克罗地亚自动, 🇭🇹 海地自动, 🇭🇺 匈牙利自动, 🇮🇩 印度尼西亚自动, 🇮🇪 爱尔兰自动, 🇮🇱 以色列自动, 🇮🇲 曼岛自动, 🇮🇳 印度自动, 🇮🇴 英属印度洋领地自动, 🇮🇶 伊拉克自动, 🇮🇷 伊朗自动, 🇮🇸 冰岛自动, 🇮🇹 意大利自动, 🇯🇪 泽西岛自动, 🇯🇲 牙买加自动, 🇯🇴 约旦自动, 🇯🇵 日本自动, 🇰🇪 肯尼亚自动, 🇰🇬 吉尔吉斯斯坦自动, 🇰🇭 柬埔寨自动, 🇰🇮 基里巴斯自动, 🇰🇲 科摩罗自动, 🇰🇳 圣基茨和尼维斯自动, 🇰🇵 朝鲜自动, 🇰🇷 韩国自动, 🇰🇼 科威特自动, 🇰🇾 开曼群岛自动, 🇰🇿 哈萨克斯坦自动, 🇱🇦 老挝自动, 🇱🇧 黎巴嫩自动, 🇱🇨 圣卢西亚自动, 🇱🇮 列支敦士登自动, 🇱🇰 斯里兰卡自动, 🇱🇷 利比里亚自动, 🇱🇸 莱索托自动, 🇱🇹 立陶宛自动, 🇱🇺 卢森堡自动, 🇱🇻 拉脱维亚自动, 🇱🇾 利比亚自动, 🇲🇦 摩洛哥自动, 🇲🇨 摩纳哥自动, 🇲🇩 摩尔多瓦自动, 🇲🇪 黑山自动, 🇲🇫 圣马丁（法属）自动, 🇲🇬 马达加斯加自动, 🇲🇭 马绍尔群岛自动, 🇲🇰 北马其顿自动, 🇲🇱 马里自动, 🇲🇲 缅甸自动, 🇲🇳 蒙古自动, 🇲🇴 澳门自动, 🇲🇵 北马里亚纳群岛自动, 🇲🇶 马提尼克自动, 🇲🇷 毛里塔尼亚自动, 🇲🇸 蒙特塞拉特自动, 🇲🇹 马耳他自动, 🇲🇺 毛里求斯自动, 🇲🇻 马尔代夫自动, 🇲🇼 马拉维自动, 🇲🇽 墨西哥自动, 🇲🇾 马来西亚自动, 🇲🇿 莫桑比克自动, 🇳🇦 纳米比亚自动, 🇳🇨 新喀里多尼亚自动, 🇳🇪 尼日尔自动, 🇳🇫 诺福克岛自动, 🇳🇬 尼日利亚自动, 🇳🇮 尼加拉瓜自动, 🇳🇱 荷兰自动, 🇳🇴 挪威自动, 🇳🇵 尼泊尔自动, 🇳🇷 瑙鲁自动, 🇳🇺 纽埃自动, 🇳🇿 新西兰自动, 🇴🇲 阿曼自动, 🇵🇦 巴拿马自动, 🇵🇪 秘鲁自动, 🇵🇫 法属波利尼西亚自动, 🇵🇬 巴布亚新几内亚自动, 🇵🇭 菲律宾自动, 🇵🇰 巴基斯坦自动, 🇵🇱 波兰自动, 🇵🇲 圣皮埃尔和密克隆自动, 🇵🇷 波多黎各自动, 🇵🇸 巴勒斯坦自动, 🇵🇹 葡萄牙自动, 🇵🇼 帕劳自动, 🇵🇾 巴拉圭自动, 🇶🇦 卡塔尔自动, 🇷🇪 留尼汪自动, 🇷🇴 罗马尼亚自动, 🇷🇸 塞尔维亚自动, 🇷🇺 俄罗斯自动, 🇷🇼 卢旺达自动, 🇸🇦 沙特阿拉伯自动, 🇸🇧 所罗门群岛自动, 🇸🇨 塞舌尔自动, 🇸🇩 苏丹自动, 🇸🇪 瑞典自动, 🇸🇬 新加坡自动, 🇸🇮 斯洛文尼亚自动, 🇸🇰 斯洛伐克自动, 🇸🇱 塞拉利昂自动, 🇸🇲 圣马力诺自动, 🇸🇳 塞内加尔自动, 🇸🇴 索马里自动, 🇸🇷 苏里南自动, 🇸🇸 南苏丹自动, 🇸🇹 圣多美和普林西比自动, 🇸🇻 萨尔瓦多自动, 🇸🇽 荷属圣马丁自动, 🇸🇾 叙利亚自动, 🇸🇿 斯威士兰自动, 🇹🇨 特克斯和凯科斯群岛自动, 🇹🇩 乍得自动, 🇹🇬 多哥自动, 🇹🇭 泰国自动, 🇹🇯 塔吉克斯坦自动, 🇹🇰 托克劳自动, 🇹🇱 东帝汶自动, 🇹🇲 土库曼斯坦自动, 🇹🇳 突尼斯自动, 🇹🇴 汤加自动, 🇹🇷 土耳其自动, 🇹🇹 特立尼达和多巴哥自动, 🇹🇻 图瓦卢自动, 🇹🇼 台湾自动, 🇹🇿 坦桑尼亚自动, 🇺🇦 乌克兰自动, 🇺🇬 乌干达自动, 🇺🇸 美国自动, 🇺🇾 乌拉圭自动, 🇺🇿 乌兹别克斯坦自动, 🇻🇦 梵蒂冈自动, 🇻🇨 圣文森特和格林纳丁斯自动, 🇻🇪 委内瑞拉自动, 🇻🇬 英属维尔京群岛自动, 🇻🇮 美属维尔京群岛自动, 🇻🇳 越南自动, 🇻🇺 瓦努阿图自动, 🇼🇫 瓦利斯和富图纳自动, 🇼🇸 萨摩亚自动, 🇾🇪 也门自动, 🇾🇹 马约特自动, 🇿🇦 南非自动, 🇿🇲 赞比亚自动, 🇿🇼 津巴布韦自动 ] }
+direct: &direct { type: selector, outbounds: [ 🎯 全球直连, 🚀 节点选择, 🎈 自动选择, 🟢 手动选择, 🇦🇩 安道尔自动, 🇦🇪 阿联酋自动, 🇦🇫 阿富汗自动, 🇦🇬 安提瓜和巴布达自动, 🇦🇮 安圭拉自动, 🇦🇱 阿尔巴尼亚自动, 🇦🇲 亚美尼亚自动, 🇦🇴 安哥拉自动, 🇦🇷 阿根廷自动, 🇦🇸 美属萨摩亚自动, 🇦🇹 奥地利自动, 🇦🇺 澳大利亚自动, 🇦🇼 阿鲁巴自动, 🇦🇽 奥兰群岛自动, 🇦🇿 阿塞拜疆自动, 🇧🇦 波斯尼亚和黑塞哥维那自动, 🇧🇧 巴巴多斯自动, 🇧🇩 孟加拉国自动, 🇧🇪 比利时自动, 🇧🇫 布基纳法索自动, 🇧🇬 保加利亚自动, 🇧🇭 巴林自动, 🇧🇮 布隆迪自动, 🇧🇯 贝宁自动, 🇧🇱 法属圣巴泰勒米自动, 🇧🇲 百慕大自动, 🇧🇳 文莱达鲁萨兰国自动, 🇧🇴 玻利维亚自动, 🇧🇶 博内尔、圣尤斯特歇斯和萨巴自动, 🇧🇷 巴西自动, 🇧🇸 巴哈马自动, 🇧🇹 不丹自动, 🇧🇼 博茨瓦纳自动, 🇧🇾 白俄罗斯自动, 🇧🇿 伯利兹自动, 🇨🇦 加拿大自动, 🇨🇩 刚果民主共和国自动, 🇨🇫 中非共和国自动, 🇨🇬 刚果自动, 🇨🇭 瑞士自动, 🇨🇮 科特迪瓦自动, 🇨🇰 库克群岛自动, 🇨🇱 智利自动, 🇨🇲 喀麦隆自动, 🇨🇳 中国自动, 🇨🇴 哥伦比亚自动, 🇨🇷 哥斯达黎加自动, 🇨🇺 古巴自动, 🇨🇻 佛得角自动, 🇨🇼 库拉索自动, 🇨🇾 塞浦路斯自动, 🇨🇿 捷克自动, 🇩🇪 德国自动, 🇩🇯 吉布提自动, 🇩🇰 丹麦自动, 🇩🇲 多米尼克自动, 🇩🇴 多米尼加共和国自动, 🇩🇿 阿尔及利亚自动, 🇪🇨 厄瓜多尔自动, 🇪🇪 爱沙尼亚自动, 🇪🇬 埃及自动, 🇪🇷 厄立特里亚自动, 🇪🇸 西班牙自动, 🇪🇹 埃塞俄比亚自动, 🇪🇺 欧洲联盟自动, 🇫🇮 芬兰自动, 🇫🇯 斐济自动, 🇫🇰 福克兰群岛自动, 🇫🇲 密克罗尼西亚联邦自动, 🇫🇴 法罗群岛自动, 🇫🇷 法国自动, 🇬🇦 加蓬自动, 🇬🇧 英国自动, 🇬🇩 格林纳达自动, 🇬🇪 格鲁吉亚自动, 🇬🇫 法属圭亚那自动, 🇬🇬 格恩西岛自动, 🇬🇭 加纳自动, 🇬🇮 直布罗陀自动, 🇬🇱 格陵兰自动, 🇬🇲 冈比亚自动, 🇬🇳 几内亚自动, 🇬🇵 瓜德罗普自动, 🇬🇶 赤道几内亚自动, 🇬🇷 希腊自动, 🇬🇹 危地马拉自动, 🇬🇺 关岛自动, 🇬🇼 几内亚比绍自动, 🇬🇾 圭亚那自动, 🇭🇰 香港自动, 🇭🇳 洪都拉斯自动, 🇭🇷 克罗地亚自动, 🇭🇹 海地自动, 🇭🇺 匈牙利自动, 🇮🇩 印度尼西亚自动, 🇮🇪 爱尔兰自动, 🇮🇱 以色列自动, 🇮🇲 曼岛自动, 🇮🇳 印度自动, 🇮🇴 英属印度洋领地自动, 🇮🇶 伊拉克自动, 🇮🇷 伊朗自动, 🇮🇸 冰岛自动, 🇮🇹 意大利自动, 🇯🇪 泽西岛自动, 🇯🇲 牙买加自动, 🇯🇴 约旦自动, 🇯🇵 日本自动, 🇰🇪 肯尼亚自动, 🇰🇬 吉尔吉斯斯坦自动, 🇰🇭 柬埔寨自动, 🇰🇮 基里巴斯自动, 🇰🇲 科摩罗自动, 🇰🇳 圣基茨和尼维斯自动, 🇰🇵 朝鲜自动, 🇰🇷 韩国自动, 🇰🇼 科威特自动, 🇰🇾 开曼群岛自动, 🇰🇿 哈萨克斯坦自动, 🇱🇦 老挝自动, 🇱🇧 黎巴嫩自动, 🇱🇨 圣卢西亚自动, 🇱🇮 列支敦士登自动, 🇱🇰 斯里兰卡自动, 🇱🇷 利比里亚自动, 🇱🇸 莱索托自动, 🇱🇹 立陶宛自动, 🇱🇺 卢森堡自动, 🇱🇻 拉脱维亚自动, 🇱🇾 利比亚自动, 🇲🇦 摩洛哥自动, 🇲🇨 摩纳哥自动, 🇲🇩 摩尔多瓦自动, 🇲🇪 黑山自动, 🇲🇫 圣马丁（法属）自动, 🇲🇬 马达加斯加自动, 🇲🇭 马绍尔群岛自动, 🇲🇰 北马其顿自动, 🇲🇱 马里自动, 🇲🇲 缅甸自动, 🇲🇳 蒙古自动, 🇲🇴 澳门自动, 🇲🇵 北马里亚纳群岛自动, 🇲🇶 马提尼克自动, 🇲🇷 毛里塔尼亚自动, 🇲🇸 蒙特塞拉特自动, 🇲🇹 马耳他自动, 🇲🇺 毛里求斯自动, 🇲🇻 马尔代夫自动, 🇲🇼 马拉维自动, 🇲🇽 墨西哥自动, 🇲🇾 马来西亚自动, 🇲🇿 莫桑比克自动, 🇳🇦 纳米比亚自动, 🇳🇨 新喀里多尼亚自动, 🇳🇪 尼日尔自动, 🇳🇫 诺福克岛自动, 🇳🇬 尼日利亚自动, 🇳🇮 尼加拉瓜自动, 🇳🇱 荷兰自动, 🇳🇴 挪威自动, 🇳🇵 尼泊尔自动, 🇳🇷 瑙鲁自动, 🇳🇺 纽埃自动, 🇳🇿 新西兰自动, 🇴🇲 阿曼自动, 🇵🇦 巴拿马自动, 🇵🇪 秘鲁自动, 🇵🇫 法属波利尼西亚自动, 🇵🇬 巴布亚新几内亚自动, 🇵🇭 菲律宾自动, 🇵🇰 巴基斯坦自动, 🇵🇱 波兰自动, 🇵🇲 圣皮埃尔和密克隆自动, 🇵🇷 波多黎各自动, 🇵🇸 巴勒斯坦自动, 🇵🇹 葡萄牙自动, 🇵🇼 帕劳自动, 🇵🇾 巴拉圭自动, 🇶🇦 卡塔尔自动, 🇷🇪 留尼汪自动, 🇷🇴 罗马尼亚自动, 🇷🇸 塞尔维亚自动, 🇷🇺 俄罗斯自动, 🇷🇼 卢旺达自动, 🇸🇦 沙特阿拉伯自动, 🇸🇧 所罗门群岛自动, 🇸🇨 塞舌尔自动, 🇸🇩 苏丹自动, 🇸🇪 瑞典自动, 🇸🇬 新加坡自动, 🇸🇮 斯洛文尼亚自动, 🇸🇰 斯洛伐克自动, 🇸🇱 塞拉利昂自动, 🇸🇲 圣马力诺自动, 🇸🇳 塞内加尔自动, 🇸🇴 索马里自动, 🇸🇷 苏里南自动, 🇸🇸 南苏丹自动, 🇸🇹 圣多美和普林西比自动, 🇸🇻 萨尔瓦多自动, 🇸🇽 荷属圣马丁自动, 🇸🇾 叙利亚自动, 🇸🇿 斯威士兰自动, 🇹🇨 特克斯和凯科斯群岛自动, 🇹🇩 乍得自动, 🇹🇬 多哥自动, 🇹🇭 泰国自动, 🇹🇯 塔吉克斯坦自动, 🇹🇰 托克劳自动, 🇹🇱 东帝汶自动, 🇹🇲 土库曼斯坦自动, 🇹🇳 突尼斯自动, 🇹🇴 汤加自动, 🇹🇷 土耳其自动, 🇹🇹 特立尼达和多巴哥自动, 🇹🇻 图瓦卢自动, 🇹🇼 台湾自动, 🇹🇿 坦桑尼亚自动, 🇺🇦 乌克兰自动, 🇺🇬 乌干达自动, 🇺🇸 美国自动, 🇺🇾 乌拉圭自动, 🇺🇿 乌兹别克斯坦自动, 🇻🇦 梵蒂冈自动, 🇻🇨 圣文森特和格林纳丁斯自动, 🇻🇪 委内瑞拉自动, 🇻🇬 英属维尔京群岛自动, 🇻🇮 美属维尔京群岛自动, 🇻🇳 越南自动, 🇻🇺 瓦努阿图自动, 🇼🇫 瓦利斯和富图纳自动, 🇼🇸 萨摩亚自动, 🇾🇪 也门自动, 🇾🇹 马约特自动, 🇿🇦 南非自动, 🇿🇲 赞比亚自动, 🇿🇼 津巴布韦自动 ] }
+# 需要删除的锚点参数
+delete: 
+  - proxy
+  - direct
+############ end of delete ############
+
+log:
+  disabled: false
+  level: warn
+  timestamp: true
+experimental:
+  clash_api:
+    external_controller: 0.0.0.0:20123
+    external_ui: ui
+    secret: ""
+    external_ui_download_url: https://ghfast.top/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+    external_ui_download_detour: 🎯 全球直连
+    default_mode: rule
+  cache_file:
+    enabled: true
+    path: cache.db
+    store_fakeip: true
+dns:
+  fakeip:
+    enabled: true
+    inet4_range: 198.18.0.0/15
+    inet6_range: fc00::/18
+  servers:
+    - { tag: ali-dns-udp, address: 223.5.5.5, detour: 🎯 全球直连 }
+    - { tag: Direct-dns, address_resolver: ali-dns-udp, address: https://dns.alidns.com/dns-query, detour: 🎯 全球直连, strategy: prefer_ipv4 }
+    - { tag: Proxy-dns, address_resolver: ali-dns-udp, address: https://dns.google/dns-query, detour: 🚀 节点选择, strategy: prefer_ipv4 }
+    - { tag: fakeip, address: fakeip }
+  rules:
+    - { outbound: any, server: Direct-dns }
+    - { clash_mode: direct, server: Direct-dns }
+    - { clash_mode: global, server: Proxy-dns }
+    - { domain: [ cdn.jsdmirror.com ], server: Direct-dns }
+    - { rule_set: [ Geosite-CN, fakeip_filter ], server: Direct-dns }
+    - { query_type: [ A, AAAA ], server: fakeip, rewrite_ttl: 1 }
+  final: Proxy-dns
+  client_subnet: 223.5.5.5
+  independent_cache: true
+route:
+  auto_detect_interface: true
+  final: 🚀 节点选择
+  rules:
+    - { inbound: tun-in, action: sniff }
+    - { protocol: dns, action: hijack-dns }
+    - { ip_is_private: true, outbound: 🎯 全球直连 }
+    - { clash_mode: direct, outbound: 🎯 全球直连 }
+    - { clash_mode: global, outbound: 🚀 节点选择 }
+    - { domain: [ cdn.jsdmirror.com ], outbound: 🎯 全球直连 }
+    - { rule_set: [ AWAvenue-Ads ], outbound: 🪧 广告拦截 }
+    - { type: logical, mode: or, rules: [ { port: [ 3478 ] }, { network: [ tcp ], port: [ 5349 ] }, { network: [ udp ], port: [ 5350, 5351, 19302 ] }, { rule_set: [ STUN ] } ], outbound: 💧 泄漏拦截 }
+    - { rule_set: [ BlockHttpDNS ], outbound: 🔎 HttpDNS }
+    - { rule_set: [ GeoSite-Private, GeoIP-Private, GeoIP-CN, fakeip_filter ], outbound: 🎯 全球直连 }
+    - { rule_set: [ AppStore ], outbound: AppStore }
+    - { rule_set: [ AppleMail ], outbound: Apple邮箱 }
+    - { rule_set: [ AppleMusic ], outbound: Apple音乐 }
+    - { rule_set: [ AppleNews ], outbound: Apple新闻 }
+    - { rule_set: [ AppleDaily ], outbound: Apple日报 }
+    - { rule_set: [ FitnessPlus ], outbound: FitnessPlus }
+    - { rule_set: [ AppleTV ], outbound: AppleTV }
+    - { rule_set: [ AppleMedia ], outbound: AppleTV }
+    - { rule_set: [ Biliintl ], outbound: 哔哩东南亚 }
+    - { rule_set: [ YouTubeMusic ], outbound: YouTubeMusic }
+    - { rule_set: [ Disney ], outbound: Disney }
+    - { rule_set: [ Bahamut ], outbound: 巴哈姆特 }
+    - { rule_set: [ HuluJP ], outbound: Hulu }
+    - { rule_set: [ HuluUSA ], outbound: Hulu }
+    - { rule_set: [ Hulu ], outbound: Hulu }
+    - { rule_set: [ TVB ], outbound: TVB }
+    - { rule_set: [ Niconico ], outbound: ニコニコ }
+    - { rule_set: [ AbemaTV ], outbound: AbemaTV }
+    - { rule_set: [ IMDB ], outbound: IMDB }
+    - { rule_set: [ SoundCloud ], outbound: SoundCloud }
+    - { rule_set: [ LastFM ], outbound: LastFM }
+    - { rule_set: [ 4GTV ], outbound: 4GTV }
+    - { rule_set: [ Discord ], outbound: Discord }
+    - { rule_set: [ Docker ], outbound: Docker }
+    - { rule_set: [ PayPal ], outbound: PayPal }
+    - { rule_set: [ Intel ], outbound: 因特尔 }
+    - { rule_set: [ Reddit ], outbound: Reddit }
+    - { rule_set: [ EHGallery ], outbound: E站 }
+    - { rule_set: [ Pixiv ], outbound: Pixiv }
+    - { rule_set: [ Wikipedia ], outbound: 维基百科 }
+    - { rule_set: [ Rockstar ], outbound: Rockstar }
+    - { rule_set: [ PlayStation ], outbound: PlayStation }
+    - { rule_set: [ Epic ], outbound: Epic }
+    - { rule_set: [ EA ], outbound: EA }
+    - { rule_set: [ Sony ], outbound: 索尼 }
+    - { rule_set: [ Hoyoverse ], outbound: Hoyoverse }
+    - { rule_set: [ 18comic ], outbound: 禁漫天堂 }
+    - { rule_set: [ GoogleDrive ], outbound: Google云盘 }
+    - { rule_set: [ GoogleEarth ], outbound: Google地图 }
+    - { rule_set: [ GoogleVoice ], outbound: GoogleVoice }
+    - { rule_set: [ Scholar ], outbound: Google学术 }
+    - { rule_set: [ HBO ], outbound: HBO }
+    - { rule_set: [ Wise ], outbound: Wise }
+    - { rule_set: [ Signal ], outbound: Signal }
+    - { rule_set: [ Picacg ], outbound: 哔咔哔咔 }
+    - { rule_set: [ Pandora ], outbound: 潘朵拉珠宝 }
+    - { rule_set: [ Talkatone ], outbound: Talkatone }
+    - { rule_set: [ Netflix ], outbound: Netflix }
+    - { rule_set: [ Tor ], outbound: Tor }
+    - { rule_set: [ Fastly ], outbound: Fastly }
+    - { rule_set: [ Google ], outbound: Google }
+    - { rule_set: [ Cloudflare ], outbound: Cloudflare }
+    - { rule_set: [ iCloud ], outbound: iCloud }
+    - { rule_set: [ Beats ], outbound: Beats }
+    - { rule_set: [ DouYin ], outbound: 抖音 }
+    - { rule_set: [ CCTV ], outbound: CCTV }
+    - { rule_set: [ Kugou ], outbound: 酷狗 }
+    - { rule_set: [ Kuwo ], outbound: 酷我 }
+    - { rule_set: [ NGA ], outbound: NGA }
+    - { rule_set: [ BaiDuTieBa ], outbound: 百度贴吧 }
+    - { rule_set: [ GaoDe ], outbound: 高德 }
+    - { rule_set: [ MeiTuan ], outbound: 美团 }
+    - { rule_set: [ SMZDM ], outbound: 什么值得买 }
+    - { rule_set: [ "12306" ], outbound: "12306" }
+    - { rule_set: [ DouBan ], outbound: 豆瓣 }
+    - { rule_set: [ Hupu ], outbound: 虎扑 }
+    - { rule_set: [ ABC ], outbound: 农业银行 }
+    - { rule_set: [ Baidu ], outbound: 百度 }
+    - { rule_set: [ DingTalk ], outbound: 钉钉 }
+    - { rule_set: [ SteamCN ], outbound: Steam中国 }
+    - { rule_set: [ JingDong ], outbound: 京东 }
+    - { rule_set: [ 58TongCheng ], outbound: 58同城 }
+    - { rule_set: [ AliPay ], outbound: 支付宝 }
+    - { rule_set: [ Pinduoduo ], outbound: 拼多多 }
+    - { rule_set: [ "4399" ], outbound: "4399" }
+    - { rule_set: [ WeChat ], outbound: 微信 }
+    - { rule_set: [ Mihoyo ], outbound: Mihoyo }
+    - { rule_set: [ Telegramcidr ], outbound: Telegram }
+    - { rule_set: [ Facebookcidr ], outbound: Facebook }
+    - { rule_set: [ Twittercidr ], outbound: Twitter }
+    - { rule_set: [ Netflixcidr ], outbound: Netflix }
+    - { rule_set: [ Torcidr ], outbound: Tor }
+    - { rule_set: [ Fastlycidr ], outbound: Fastly }
+    - { rule_set: [ Googlecidr ], outbound: Google }
+    - { rule_set: [ Cloudflarecidr ], outbound: Cloudflare }
+  rule_set:
+    # senshinya 规则集
+    - { tag: STUN, type: remote, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/STUN/STUN.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: BlockHttpDNS, type: remote, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/BlockHttpDNS/BlockHttpDNS.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: "115", type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/115/115.srs, download_detour: 🎯 全球直连 }
+    - { tag: "4399", type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/4399/4399.srs, download_detour: 🎯 全球直连 }
+    - { tag: "12306", type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/12306/12306.srs, download_detour: 🎯 全球直连 }
+    - { tag: JingDong, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/JingDong/JingDong.srs, download_detour: 🎯 全球直连 }
+    - { tag: 58TongCheng, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/58TongCheng/58TongCheng.srs, download_detour: 🎯 全球直连 }
+    - { tag: AliPay, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AliPay/AliPay.srs, download_detour: 🎯 全球直连 }
+    - { tag: Pinduoduo, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Pinduoduo/Pinduoduo.srs, download_detour: 🎯 全球直连 }
+    - { tag: PikPak, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/PikPak/PikPak.srs, download_detour: 🎯 全球直连 }
+    - { tag: YouTubeMusic, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/YouTubeMusic/YouTubeMusic.srs, download_detour: 🎯 全球直连 }
+    - { tag: Discord, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Discord/Discord.srs, download_detour: 🎯 全球直连 }
+    - { tag: GitHub, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/GitHub/GitHub.srs, download_detour: 🎯 全球直连 }
+    - { tag: Bahamut, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Bahamut/Bahamut.srs, download_detour: 🎯 全球直连 }
+    - { tag: Hulu, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Hulu/Hulu.srs, download_detour: 🎯 全球直连 }
+    - { tag: TVB, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/TVB/TVB.srs, download_detour: 🎯 全球直连 }
+    - { tag: Niconico, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Niconico/Niconico.srs, download_detour: 🎯 全球直连 }
+    - { tag: AbemaTV, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AbemaTV/AbemaTV.srs, download_detour: 🎯 全球直连 }
+    - { tag: ABC, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/ABC/ABC.srs, download_detour: 🎯 全球直连 }
+    - { tag: Adobe, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Adobe/Adobe.srs, download_detour: 🎯 全球直连 }
+    - { tag: AmazonPrimeVideo, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AmazonPrimeVideo/AmazonPrimeVideo.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleDaily, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleDaily/AppleDaily.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleDev, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleDev/AppleDev.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleFirmware, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleFirmware/AppleFirmware.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleHardware, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleHardware/AppleHardware.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleID, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleID/AppleID.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleMail, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleMail/AppleMail.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleMedia, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleMedia/AppleMedia.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleMusic, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleMusic/AppleMusic.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleNews, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleNews/AppleNews.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleProxy, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleProxy/AppleProxy.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppleTV, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppleTV/AppleTV.srs, download_detour: 🎯 全球直连 }
+    - { tag: AppStore, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/AppStore/AppStore.srs, download_detour: 🎯 全球直连 }
+    - { tag: Baidu, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Baidu/Baidu.srs, download_detour: 🎯 全球直连 }
+    - { tag: BaiDuTieBa, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/BaiDuTieBa/BaiDuTieBa.srs, download_detour: 🎯 全球直连 }
+    - { tag: Beats, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Beats/Beats.srs, download_detour: 🎯 全球直连 }
+    - { tag: Bing, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Bing/Bing.srs, download_detour: 🎯 全球直连 }
+    - { tag: CCTV, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/CCTV/CCTV.srs, download_detour: 🎯 全球直连 }
+    - { tag: Claude, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Claude/Claude.srs, download_detour: 🎯 全球直连 }
+    - { tag: DingTalk, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/DingTalk/DingTalk.srs, download_detour: 🎯 全球直连 }
+    - { tag: Docker, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Docker/Docker.srs, download_detour: 🎯 全球直连 }
+    - { tag: DouBan, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/DouBan/DouBan.srs, download_detour: 🎯 全球直连 }
+    - { tag: DouYin, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/DouYin/DouYin.srs, download_detour: 🎯 全球直连 }
+    - { tag: EA, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/EA/EA.srs, download_detour: 🎯 全球直连 }
+    - { tag: Epic, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Epic/Epic.srs, download_detour: 🎯 全球直连 }
+    - { tag: FitnessPlus, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/FitnessPlus/FitnessPlus.srs, download_detour: 🎯 全球直连 }
+    - { tag: GaoDe, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/GaoDe/GaoDe.srs, download_detour: 🎯 全球直连 }
+    - { tag: Gemini, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Gemini/Gemini.srs, download_detour: 🎯 全球直连 }
+    - { tag: GoogleDrive, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/GoogleDrive/GoogleDrive.srs, download_detour: 🎯 全球直连 }
+    - { tag: GoogleEarth, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/GoogleEarth/GoogleEarth.srs, download_detour: 🎯 全球直连 }
+    - { tag: GoogleVoice, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/GoogleVoice/GoogleVoice.srs, download_detour: 🎯 全球直连 }
+    - { tag: HuluJP, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/HuluJP/HuluJP.srs, download_detour: 🎯 全球直连 }
+    - { tag: HuluUSA, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/HuluUSA/HuluUSA.srs, download_detour: 🎯 全球直连 }
+    - { tag: Hupu, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Hupu/Hupu.srs, download_detour: 🎯 全球直连 }
+    - { tag: iCloud, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/iCloud/iCloud.srs, download_detour: 🎯 全球直连 }
+    - { tag: IMDB, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/IMDB/IMDB.srs, download_detour: 🎯 全球直连 }
+    - { tag: Instagram, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Instagram/Instagram.srs, download_detour: 🎯 全球直连 }
+    - { tag: Intel, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Intel/Intel.srs, download_detour: 🎯 全球直连 }
+    - { tag: LastFM, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/LastFM/LastFM.srs, download_detour: 🎯 全球直连 }
+    - { tag: MeiTuan, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/MeiTuan/MeiTuan.srs, download_detour: 🎯 全球直连 }
+    - { tag: Microsoft, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Microsoft/Microsoft.srs, download_detour: 🎯 全球直连 }
+    - { tag: MicrosoftEdge, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/MicrosoftEdge/MicrosoftEdge.srs, download_detour: 🎯 全球直连 }
+    - { tag: NGA, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/NGA/NGA.srs, download_detour: 🎯 全球直连 }
+    - { tag: OneDrive, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/OneDrive/OneDrive.srs, download_detour: 🎯 全球直连 }
+    - { tag: Pandora, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Pandora/Pandora.srs, download_detour: 🎯 全球直连 }
+    - { tag: PayPal, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/PayPal/PayPal.srs, download_detour: 🎯 全球直连 }
+    - { tag: PlayStation, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/PlayStation/PlayStation.srs, download_detour: 🎯 全球直连 }
+    - { tag: Reddit, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Reddit/Reddit.srs, download_detour: 🎯 全球直连 }
+    - { tag: Rockstar, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Rockstar/Rockstar.srs, download_detour: 🎯 全球直连 }
+    - { tag: Scholar, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Scholar/Scholar.srs, download_detour: 🎯 全球直连 }
+    - { tag: Sina, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Sina/Sina.srs, download_detour: 🎯 全球直连 }
+    - { tag: Siri, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Siri/Siri.srs, download_detour: 🎯 全球直连 }
+    - { tag: SMZDM, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/SMZDM/SMZDM.srs, download_detour: 🎯 全球直连 }
+    - { tag: Sony, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Sony/Sony.srs, download_detour: 🎯 全球直连 }
+    - { tag: SoundCloud, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/SoundCloud/SoundCloud.srs, download_detour: 🎯 全球直连 }
+    - { tag: Speedtest, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Speedtest/Speedtest.srs, download_detour: 🎯 全球直连 }
+    - { tag: Steam, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Steam/Steam.srs, download_detour: 🎯 全球直连 }
+    - { tag: SteamCN, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/SteamCN/SteamCN.srs, download_detour: 🎯 全球直连 }
+    - { tag: SystemOTA, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/SystemOTA/SystemOTA.srs, download_detour: 🎯 全球直连 }
+    - { tag: Teams, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Teams/Teams.srs, download_detour: 🎯 全球直连 }
+    - { tag: Pixiv, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Pixiv/Pixiv.srs, download_detour: 🎯 全球直连 }
+    - { tag: Wikipedia, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Wikipedia/Wikipedia.srs, download_detour: 🎯 全球直连 }
+    - { tag: HBO, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/HBO/HBO.srs, download_detour: 🎯 全球直连 }
+    - { tag: Emby, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Emby/Emby.srs, download_detour: 🎯 全球直连 }
+    - { tag: Disney, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/Disney/Disney.srs, download_detour: 🎯 全球直连 }
+    - { tag: EHGallery, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/EHGallery/EHGallery.srs, download_detour: 🎯 全球直连 }
+    - { tag: TikTok, type: remote, url: https://cdn.jsdmirror.com/gh/senshinya/singbox_ruleset@main/rule/TikTok/TikTok.srs, format: binary, download_detour: 🎯 全球直连 }
+    # MetaCubeX 规则集
+    - { tag: AWAvenue-Ads, type: remote, url: https://cdn.jsdmirror.com/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Singbox.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: GeoIP-Private, type: remote, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: GeoSite-Private, type: remote, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: Geosite-CN, type: remote, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: GeoIP-CN, type: remote, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: fakeip_filter, type: remote, url: https://cdn.jsdmirror.com/gh/DustinWin/ruleset_geodata@sing-box-ruleset/fakeip-filter.srs, format: binary, download_detour: 🎯 全球直连 }
+    - { tag: Biliintl, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/biliintl.srs, download_detour: 🎯 全球直连 }
+    - { tag: 18comic, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/18comic.srs, download_detour: 🎯 全球直连 }
+    - { tag: Tor, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tor.srs, download_detour: 🎯 全球直连 }
+    - { tag: Torcidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/tor.srs, download_detour: 🎯 全球直连 }
+    - { tag: Fastly, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/fastly.srs, download_detour: 🎯 全球直连 }
+    - { tag: Fastlycidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/fastly.srs, download_detour: 🎯 全球直连 }
+    - { tag: Wise, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/wise.srs, download_detour: 🎯 全球直连 }
+    - { tag: Signal, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/signal.srs, download_detour: 🎯 全球直连 }
+    - { tag: Picacg, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/picacg.srs, download_detour: 🎯 全球直连 }
+    - { tag: Hoyoverse, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hoyoverse.srs, download_detour: 🎯 全球直连 }
+    - { tag: Mihoyo, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/mihoyo.srs, download_detour: 🎯 全球直连 }
+    - { tag: Kugou, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/kugou.srs, download_detour: 🎯 全球直连 }
+    - { tag: Kuwo, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/kuwo.srs, download_detour: 🎯 全球直连 }
+    - { tag: Cloudflare, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cloudflare.srs, download_detour: 🎯 全球直连 }
+    - { tag: Cloudflarecidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cloudflare.srs, download_detour: 🎯 全球直连 }
+    - { tag: Telegram, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs, download_detour: 🎯 全球直连 }
+    - { tag: Telegramcidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs, download_detour: 🎯 全球直连 }
+    - { tag: Facebook, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/facebook.srs, download_detour: 🎯 全球直连 }
+    - { tag: Facebookcidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/facebook.srs, download_detour: 🎯 全球直连 }
+    - { tag: Twitter, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs, download_detour: 🎯 全球直连 }
+    - { tag: Twittercidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/twitter.srs, download_detour: 🎯 全球直连 }
+    - { tag: Netflix, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs, download_detour: 🎯 全球直连 }
+    - { tag: Netflixcidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs, download_detour: 🎯 全球直连 }
+    - { tag: Google, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.srs, download_detour: 🎯 全球直连 }
+    - { tag: Googlecidr, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs, download_detour: 🎯 全球直连 }
+    # 自定义 规则集
+    - { tag: 4GTV, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/Kwisma/cf-worker-mihomo@main/rules/singbox/4GTV/4GTV.srs, download_detour: 🎯 全球直连 }
+    - { tag: WeChat, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/Coldvvater/Mononoke@master/sing-box/Rules/WeChat.srs, download_detour: 🎯 全球直连 }
+    - { tag: Talkatone, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/Coldvvater/Mononoke@master/sing-box/Rules/Talkatone.srs, download_detour: 🎯 全球直连 }
+    - { tag: Tracker, type: remote, format: binary, url: https://cdn.jsdmirror.com/gh/Kwisma/cf-worker-mihomo@main/rules/singbox/Tracker/Tracker.srs, download_detour: 🎯 全球直连 }
+inbounds:
+  - { tag: tun-in, type: tun, address: [ 172.19.0.1/30, fdfe:dcba:9876::1/126 ], mtu: 9000, stack: system, auto_route: true }
+outbounds:
+  - { type: direct, tag: 🎯 全局直连 }
+  - { type: block, tag: 🚫 拒绝连接 }
+  - { tag: 🚀 节点选择, type: selector, outbounds: [ 🎈 自动选择, 🟢 手动选择, 🇦🇩 安道尔自动, 🇦🇪 阿联酋自动, 🇦🇫 阿富汗自动, 🇦🇬 安提瓜和巴布达自动, 🇦🇮 安圭拉自动, 🇦🇱 阿尔巴尼亚自动, 🇦🇲 亚美尼亚自动, 🇦🇴 安哥拉自动, 🇦🇷 阿根廷自动, 🇦🇸 美属萨摩亚自动, 🇦🇹 奥地利自动, 🇦🇺 澳大利亚自动, 🇦🇼 阿鲁巴自动, 🇦🇽 奥兰群岛自动, 🇦🇿 阿塞拜疆自动, 🇧🇦 波斯尼亚和黑塞哥维那自动, 🇧🇧 巴巴多斯自动, 🇧🇩 孟加拉国自动, 🇧🇪 比利时自动, 🇧🇫 布基纳法索自动, 🇧🇬 保加利亚自动, 🇧🇭 巴林自动, 🇧🇮 布隆迪自动, 🇧🇯 贝宁自动, 🇧🇱 法属圣巴泰勒米自动, 🇧🇲 百慕大自动, 🇧🇳 文莱达鲁萨兰国自动, 🇧🇴 玻利维亚自动, 🇧🇶 博内尔、圣尤斯特歇斯和萨巴自动, 🇧🇷 巴西自动, 🇧🇸 巴哈马自动, 🇧🇹 不丹自动, 🇧🇼 博茨瓦纳自动, 🇧🇾 白俄罗斯自动, 🇧🇿 伯利兹自动, 🇨🇦 加拿大自动, 🇨🇩 刚果民主共和国自动, 🇨🇫 中非共和国自动, 🇨🇬 刚果自动, 🇨🇭 瑞士自动, 🇨🇮 科特迪瓦自动, 🇨🇰 库克群岛自动, 🇨🇱 智利自动, 🇨🇲 喀麦隆自动, 🇨🇳 中国自动, 🇨🇴 哥伦比亚自动, 🇨🇷 哥斯达黎加自动, 🇨🇺 古巴自动, 🇨🇻 佛得角自动, 🇨🇼 库拉索自动, 🇨🇾 塞浦路斯自动, 🇨🇿 捷克自动, 🇩🇪 德国自动, 🇩🇯 吉布提自动, 🇩🇰 丹麦自动, 🇩🇲 多米尼克自动, 🇩🇴 多米尼加共和国自动, 🇩🇿 阿尔及利亚自动, 🇪🇨 厄瓜多尔自动, 🇪🇪 爱沙尼亚自动, 🇪🇬 埃及自动, 🇪🇷 厄立特里亚自动, 🇪🇸 西班牙自动, 🇪🇹 埃塞俄比亚自动, 🇪🇺 欧洲联盟自动, 🇫🇮 芬兰自动, 🇫🇯 斐济自动, 🇫🇰 福克兰群岛自动, 🇫🇲 密克罗尼西亚联邦自动, 🇫🇴 法罗群岛自动, 🇫🇷 法国自动, 🇬🇦 加蓬自动, 🇬🇧 英国自动, 🇬🇩 格林纳达自动, 🇬🇪 格鲁吉亚自动, 🇬🇫 法属圭亚那自动, 🇬🇬 格恩西岛自动, 🇬🇭 加纳自动, 🇬🇮 直布罗陀自动, 🇬🇱 格陵兰自动, 🇬🇲 冈比亚自动, 🇬🇳 几内亚自动, 🇬🇵 瓜德罗普自动, 🇬🇶 赤道几内亚自动, 🇬🇷 希腊自动, 🇬🇹 危地马拉自动, 🇬🇺 关岛自动, 🇬🇼 几内亚比绍自动, 🇬🇾 圭亚那自动, 🇭🇰 香港自动, 🇭🇳 洪都拉斯自动, 🇭🇷 克罗地亚自动, 🇭🇹 海地自动, 🇭🇺 匈牙利自动, 🇮🇩 印度尼西亚自动, 🇮🇪 爱尔兰自动, 🇮🇱 以色列自动, 🇮🇲 曼岛自动, 🇮🇳 印度自动, 🇮🇴 英属印度洋领地自动, 🇮🇶 伊拉克自动, 🇮🇷 伊朗自动, 🇮🇸 冰岛自动, 🇮🇹 意大利自动, 🇯🇪 泽西岛自动, 🇯🇲 牙买加自动, 🇯🇴 约旦自动, 🇯🇵 日本自动, 🇰🇪 肯尼亚自动, 🇰🇬 吉尔吉斯斯坦自动, 🇰🇭 柬埔寨自动, 🇰🇮 基里巴斯自动, 🇰🇲 科摩罗自动, 🇰🇳 圣基茨和尼维斯自动, 🇰🇵 朝鲜自动, 🇰🇷 韩国自动, 🇰🇼 科威特自动, 🇰🇾 开曼群岛自动, 🇰🇿 哈萨克斯坦自动, 🇱🇦 老挝自动, 🇱🇧 黎巴嫩自动, 🇱🇨 圣卢西亚自动, 🇱🇮 列支敦士登自动, 🇱🇰 斯里兰卡自动, 🇱🇷 利比里亚自动, 🇱🇸 莱索托自动, 🇱🇹 立陶宛自动, 🇱🇺 卢森堡自动, 🇱🇻 拉脱维亚自动, 🇱🇾 利比亚自动, 🇲🇦 摩洛哥自动, 🇲🇨 摩纳哥自动, 🇲🇩 摩尔多瓦自动, 🇲🇪 黑山自动, 🇲🇫 圣马丁（法属）自动, 🇲🇬 马达加斯加自动, 🇲🇭 马绍尔群岛自动, 🇲🇰 北马其顿自动, 🇲🇱 马里自动, 🇲🇲 缅甸自动, 🇲🇳 蒙古自动, 🇲🇴 澳门自动, 🇲🇵 北马里亚纳群岛自动, 🇲🇶 马提尼克自动, 🇲🇷 毛里塔尼亚自动, 🇲🇸 蒙特塞拉特自动, 🇲🇹 马耳他自动, 🇲🇺 毛里求斯自动, 🇲🇻 马尔代夫自动, 🇲🇼 马拉维自动, 🇲🇽 墨西哥自动, 🇲🇾 马来西亚自动, 🇲🇿 莫桑比克自动, 🇳🇦 纳米比亚自动, 🇳🇨 新喀里多尼亚自动, 🇳🇪 尼日尔自动, 🇳🇫 诺福克岛自动, 🇳🇬 尼日利亚自动, 🇳🇮 尼加拉瓜自动, 🇳🇱 荷兰自动, 🇳🇴 挪威自动, 🇳🇵 尼泊尔自动, 🇳🇷 瑙鲁自动, 🇳🇺 纽埃自动, 🇳🇿 新西兰自动, 🇴🇲 阿曼自动, 🇵🇦 巴拿马自动, 🇵🇪 秘鲁自动, 🇵🇫 法属波利尼西亚自动, 🇵🇬 巴布亚新几内亚自动, 🇵🇭 菲律宾自动, 🇵🇰 巴基斯坦自动, 🇵🇱 波兰自动, 🇵🇲 圣皮埃尔和密克隆自动, 🇵🇷 波多黎各自动, 🇵🇸 巴勒斯坦自动, 🇵🇹 葡萄牙自动, 🇵🇼 帕劳自动, 🇵🇾 巴拉圭自动, 🇶🇦 卡塔尔自动, 🇷🇪 留尼汪自动, 🇷🇴 罗马尼亚自动, 🇷🇸 塞尔维亚自动, 🇷🇺 俄罗斯自动, 🇷🇼 卢旺达自动, 🇸🇦 沙特阿拉伯自动, 🇸🇧 所罗门群岛自动, 🇸🇨 塞舌尔自动, 🇸🇩 苏丹自动, 🇸🇪 瑞典自动, 🇸🇬 新加坡自动, 🇸🇮 斯洛文尼亚自动, 🇸🇰 斯洛伐克自动, 🇸🇱 塞拉利昂自动, 🇸🇲 圣马力诺自动, 🇸🇳 塞内加尔自动, 🇸🇴 索马里自动, 🇸🇷 苏里南自动, 🇸🇸 南苏丹自动, 🇸🇹 圣多美和普林西比自动, 🇸🇻 萨尔瓦多自动, 🇸🇽 荷属圣马丁自动, 🇸🇾 叙利亚自动, 🇸🇿 斯威士兰自动, 🇹🇨 特克斯和凯科斯群岛自动, 🇹🇩 乍得自动, 🇹🇬 多哥自动, 🇹🇭 泰国自动, 🇹🇯 塔吉克斯坦自动, 🇹🇰 托克劳自动, 🇹🇱 东帝汶自动, 🇹🇲 土库曼斯坦自动, 🇹🇳 突尼斯自动, 🇹🇴 汤加自动, 🇹🇷 土耳其自动, 🇹🇹 特立尼达和多巴哥自动, 🇹🇻 图瓦卢自动, 🇹🇼 台湾自动, 🇹🇿 坦桑尼亚自动, 🇺🇦 乌克兰自动, 🇺🇬 乌干达自动, 🇺🇸 美国自动, 🇺🇾 乌拉圭自动, 🇺🇿 乌兹别克斯坦自动, 🇻🇦 梵蒂冈自动, 🇻🇨 圣文森特和格林纳丁斯自动, 🇻🇪 委内瑞拉自动, 🇻🇬 英属维尔京群岛自动, 🇻🇮 美属维尔京群岛自动, 🇻🇳 越南自动, 🇻🇺 瓦努阿图自动, 🇼🇫 瓦利斯和富图纳自动, 🇼🇸 萨摩亚自动, 🇾🇪 也门自动, 🇾🇹 马约特自动, 🇿🇦 南非自动, 🇿🇲 赞比亚自动, 🇿🇼 津巴布韦自动 ] }
+  - { tag: 🟢 手动选择, type: selector, outbounds: [], filter: [ { action: all, keywords: [ "" ] } ] }
+  - { tag: 🎯 全球直连, type: selector, outbounds: [ 🎯 全局直连, 🚀 节点选择 ] }
+  - { tag: 🪧 广告拦截, type: selector, outbounds: [ 🚫 拒绝连接, 🎯 全局直连, 🚀 节点选择 ] }
+  - { tag: 💧 泄漏拦截, type: selector, outbounds: [ 🚫 拒绝连接, 🎯 全局直连, 🚀 节点选择 ] }
+  - { tag: 🔎 HttpDNS, type: selector, outbounds: [ 🚫 拒绝连接, 🎯 全局直连, 🚀 节点选择 ] }
+  - { tag: 🎈 自动选择, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: all, keywords: [ "" ] } ] }
+  - { tag: "115", <<: *direct }
+  - { tag: "12306", <<: *direct }
+  - { tag: "4399", <<: *direct }
+  - { tag: 4GTV, <<: *proxy }
+  - { tag: 58同城, <<: *direct }
+  - { tag: 农业银行, <<: *direct }
+  - { tag: AbemaTV, <<: *proxy }
+  - { tag: Adobe, <<: *proxy }
+  - { tag: 支付宝, <<: *direct }
+  - { tag: 阿里巴巴, <<: *direct }
+  - { tag: 亚马逊电商, <<: *proxy }
+  - { tag: 亚马逊TV, <<: *proxy }
+  - { tag: Apple, <<: *proxy }
+  - { tag: AppleCN, <<: *direct }
+  - { tag: AppStore, <<: *proxy }
+  - { tag: Apple邮箱, <<: *proxy }
+  - { tag: Apple音乐, <<: *proxy }
+  - { tag: Apple新闻, <<: *proxy }
+  - { tag: Apple日报, <<: *proxy }
+  - { tag: AppleTV, <<: *proxy }
+  - { tag: 巴哈姆特, <<: *proxy }
+  - { tag: 百度贴吧, <<: *direct }
+  - { tag: 百度, <<: *direct }
+  - { tag: 哔哩哔哩, <<: *direct }
+  - { tag: 哔哩东南亚, <<: *proxy }
+  - { tag: BT追踪器, <<: *direct }
+  - { tag: 暴雪, <<: *proxy }
+  - { tag: 字节跳动, <<: *direct }
+  - { tag: Beats, <<: *direct }
+  - { tag: CCTV, <<: *direct }
+  - { tag: 中国媒体, <<: *direct }
+  - { tag: Cloudflare, <<: *proxy }
+  - { tag: 钉钉, <<: *direct }
+  - { tag: Discord, <<: *proxy }
+  - { tag: Disney, <<: *proxy }
+  - { tag: Docker, <<: *proxy }
+  - { tag: 豆瓣, <<: *direct }
+  - { tag: E站, <<: *proxy }
+  - { tag: EA, <<: *proxy }
+  - { tag: Epic, <<: *proxy }
+  - { tag: Emby, <<: *proxy }
+  - { tag: FCM, <<: *proxy }
+  - { tag: Facebook, <<: *proxy }
+  - { tag: Fastly, <<: *proxy }
+  - { tag: FitnessPlus, <<: *direct }
+  - { tag: 高德, <<: *direct }
+  - { tag: GitHub, <<: *proxy }
+  - { tag: Google, <<: *proxy }
+  - { tag: Google云盘, <<: *proxy }
+  - { tag: Google地图, <<: *proxy }
+  - { tag: GoogleVoice, <<: *proxy }
+  - { tag: Hoyoverse, <<: *proxy }
+  - { tag: Hulu, <<: *proxy }
+  - { tag: 虎扑, <<: *direct }
+  - { tag: HBO, <<: *proxy }
+  - { tag: IMDB, <<: *proxy }
+  - { tag: 爱奇艺, <<: *direct }
+  - { tag: Instagram, <<: *proxy }
+  - { tag: 因特尔, <<: *proxy }
+  - { tag: iCloud, <<: *direct }
+  - { tag: 京东, <<: *direct }
+  - { tag: 酷狗, <<: *direct }
+  - { tag: 酷我, <<: *direct }
+  - { tag: LastFM, <<: *proxy }
+  - { tag: LINE, <<: *proxy }
+  - { tag: 美团, <<: *direct }
+  - { tag: 微软, <<: *direct }
+  - { tag: Mihoyo, <<: *direct }
+  - { tag: NGA, <<: *direct }
+  - { tag: 网易, <<: *direct }
+  - { tag: 网易云音乐, <<: *direct }
+  - { tag: Netflix, <<: *proxy }
+  - { tag: ニコニコ, <<: *proxy }
+  - { tag: OpenAI, <<: *proxy }
+  - { tag: 微软云盘, <<: *proxy }
+  - { tag: 潘朵拉珠宝, <<: *proxy }
+  - { tag: PayPal, <<: *proxy }
+  - { tag: PikPak, <<: *proxy }
+  - { tag: 拼多多, <<: *direct }
+  - { tag: Pixiv, <<: *proxy }
+  - { tag: PlayStation, <<: *proxy }
+  - { tag: 国际媒体, <<: *proxy }
+  - { tag: Qobuz, <<: *proxy }
+  - { tag: Reddit, <<: *proxy }
+  - { tag: Rockstar, <<: *proxy }
+  - { tag: 什么值得买, <<: *direct }
+  - { tag: Google学术, <<: *proxy }
+  - { tag: 新浪, <<: *direct }
+  - { tag: 索尼, <<: *direct }
+  - { tag: SoundCloud, <<: *proxy }
+  - { tag: Speedtest, <<: *proxy }
+  - { tag: Spotify, <<: *proxy }
+  - { tag: Steam, <<: *proxy }
+  - { tag: Steam中国, <<: *direct }
+  - { tag: Supercell, <<: *proxy }
+  - { tag: Signal, <<: *proxy }
+  - { tag: TVB, <<: *proxy }
+  - { tag: Telegram, <<: *proxy }
+  - { tag: 腾讯, <<: *direct }
+  - { tag: 抖音, <<: *direct }
+  - { tag: TikTok, <<: *proxy }
+  - { tag: Twitch, <<: *proxy }
+  - { tag: Twitter, <<: *proxy }
+  - { tag: Tor, <<: *proxy }
+  - { tag: Talkatone, <<: *proxy }
+  - { tag: 微信, <<: *direct }
+  - { tag: 维基百科, <<: *proxy }
+  - { tag: Wise, <<: *proxy }
+  - { tag: YouTube, <<: *proxy }
+  - { tag: YouTubeMusic, <<: *proxy }
+  - { tag: 禁漫天堂, <<: *proxy }
+  - { tag: 哔咔哔咔, <<: *proxy }
+  ############ 全国家分组自动选择 ############
+  - { tag: 🇺🇸 美国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇺🇸|\\bUS\\b|美国|United States|\\bCT\\b|UnitedStates" ] } ] }
+  - { tag: 🇧🇷 巴西自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇷|\\bBR\\b|巴西|Brazil" ] } ] }
+  - { tag: 🇨🇳 中国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇳|\\bCN\\b|中国|China" ] } ] }
+  - { tag: 🇷🇺 俄罗斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇷🇺|\\bRU\\b|俄罗斯|Russian Federation|RussianFederation" ] } ] }
+  - { tag: 🇮🇳 印度自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇳|\\bIN\\b|印度|India" ] } ] }
+  - { tag: 🇬🇧 英国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇧|\\bGB\\b|英国|United Kingdom|\\bUK\\b|UnitedKingdom" ] } ] }
+  - { tag: 🇮🇩 印度尼西亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇩|\\bID\\b|印度尼西亚|Indonesia" ] } ] }
+  - { tag: 🇩🇪 德国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇩🇪|\\bDE\\b|德国|Germany" ] } ] }
+  - { tag: 🇦🇺 澳大利亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇺|\\bAU\\b|澳大利亚|Australia" ] } ] }
+  - { tag: 🇵🇱 波兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇱|\\bPL\\b|波兰|Poland" ] } ] }
+  - { tag: 🇨🇦 加拿大自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇦|\\bCA\\b|加拿大|Canada" ] } ] }
+  - { tag: 🇺🇦 乌克兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇺🇦|\\bUA\\b|乌克兰|Ukraine" ] } ] }
+  - { tag: 🇫🇷 法国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇫🇷|\\bFR\\b|法国|France" ] } ] }
+  - { tag: 🇧🇩 孟加拉国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇩|\\bBD\\b|孟加拉国|Bangladesh" ] } ] }
+  - { tag: 🇳🇱 荷兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇱|\\bNL\\b|荷兰|Netherlands|\\bAN\\b|Netherlands Antilles" ] } ] }
+  - { tag: 🇮🇹 意大利自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇹|\\bIT\\b|意大利|Italy" ] } ] }
+  - { tag: 🇭🇰 香港自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇭🇰|\\bHK\\b|香港|Hong Kong|HongKong" ] } ] }
+  - { tag: 🇷🇴 罗马尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇷🇴|\\bRO\\b|罗马尼亚|Romania" ] } ] }
+  - { tag: 🇪🇸 西班牙自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇪🇸|\\bES\\b|西班牙|Spain" ] } ] }
+  - { tag: 🇦🇷 阿根廷自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇷|\\bAR\\b|阿根廷|Argentina" ] } ] }
+  - { tag: 🇯🇵 日本自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇯🇵|\\bJP\\b|日本|Japan" ] } ] }
+  - { tag: 🇨🇭 瑞士自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇭|\\bCH\\b|瑞士|Switzerland" ] } ] }
+  - { tag: 🇰🇷 韩国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇷|\\bKR\\b|韩国|Korea, Republic of" ] } ] }
+  - { tag: 🇹🇷 土耳其自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇷|\\bTR\\b|土耳其|Turkey" ] } ] }
+  - { tag: 🇸🇪 瑞典自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇪|\\bSE\\b|瑞典|Sweden" ] } ] }
+  - { tag: 🇻🇳 越南自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇻🇳|\\bVN\\b|越南|Viet Nam|VietNam" ] } ] }
+  - { tag: 🇿🇦 南非自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇿🇦|\\bZA\\b|南非|South Africa|SouthAfrica" ] } ] }
+  - { tag: 🇮🇷 伊朗自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇷|\\bIR\\b|伊朗|Iran, Islamic Republic of" ] } ] }
+  - { tag: 🇧🇬 保加利亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇬|\\bBG\\b|保加利亚|Bulgaria" ] } ] }
+  - { tag: 🇦🇹 奥地利自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇹|\\bAT\\b|奥地利|Austria" ] } ] }
+  - { tag: 🇳🇿 新西兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇿|\\bNZ\\b|新西兰|New Zealand|NewZealand" ] } ] }
+  - { tag: 🇲🇽 墨西哥自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇽|\\bMX\\b|墨西哥|Mexico" ] } ] }
+  - { tag: 🇨🇿 捷克自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇿|\\bCZ\\b|捷克|Czech Republic|CzechRepublic" ] } ] }
+  - { tag: 🇸🇬 新加坡自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇬|\\bSG\\b|新加坡|Singapore" ] } ] }
+  - { tag: 🇵🇭 菲律宾自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇭|\\bPH\\b|菲律宾|Philippines" ] } ] }
+  - { tag: 🇹🇭 泰国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇭|\\bTH\\b|泰国|Thailand" ] } ] }
+  - { tag: 🇨🇴 哥伦比亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇴|\\bCO\\b|哥伦比亚|Colombia" ] } ] }
+  - { tag: 🇩🇰 丹麦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇩🇰|\\bDK\\b|丹麦|Denmark" ] } ] }
+  - { tag: 🇹🇼 台湾自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇼|\\bTW\\b|台湾|Taiwan|Tai wan" ] } ] }
+  - { tag: 🇳🇴 挪威自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇴|\\bNO\\b|挪威|Norway" ] } ] }
+  - { tag: 🇧🇪 比利时自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇪|\\bBE\\b|比利时|Belgium" ] } ] }
+  - { tag: 🇨🇱 智利自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇱|\\bCL\\b|智利|Chile" ] } ] }
+  - { tag: 🇫🇮 芬兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇫🇮|\\bFI\\b|芬兰|Finland" ] } ] }
+  - { tag: 🇵🇰 巴基斯坦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇰|\\bPK\\b|巴基斯坦|Pakistan" ] } ] }
+  - { tag: 🇮🇱 以色列自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇱|\\bIL\\b|以色列|Israel" ] } ] }
+  - { tag: 🇲🇾 马来西亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇾|\\bMY\\b|马来西亚|Malaysia" ] } ] }
+  - { tag: 🇪🇺 欧洲联盟自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇪🇺|\\bEU\\b|欧洲联盟|European Union|EuropeanUnion" ] } ] }
+  - { tag: 🇱🇻 拉脱维亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇻|\\bLV\\b|拉脱维亚|Latvia" ] } ] }
+  - { tag: 🇭🇺 匈牙利自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇭🇺|\\bHU\\b|匈牙利|Hungary" ] } ] }
+  - { tag: 🇮🇪 爱尔兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇪|\\bIE\\b|爱尔兰|Ireland" ] } ] }
+  - { tag: 🇳🇬 尼日利亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇬|\\bNG\\b|尼日利亚|Nigeria" ] } ] }
+  - { tag: 🇸🇮 斯洛文尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇮|\\bSI\\b|斯洛文尼亚|Slovenia" ] } ] }
+  - { tag: 🇬🇷 希腊自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇷|\\bGR\\b|希腊|Greece" ] } ] }
+  - { tag: 🇪🇨 厄瓜多尔自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇪🇨|\\bEC\\b|厄瓜多尔|Ecuador" ] } ] }
+  - { tag: 🇰🇪 肯尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇪|\\bKE\\b|肯尼亚|Kenya" ] } ] }
+  - { tag: 🇻🇪 委内瑞拉自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇻🇪|\\bVE\\b|委内瑞拉|Venezuela, Bolivarian Republic of" ] } ] }
+  - { tag: 🇸🇰 斯洛伐克自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇰|\\bSK\\b|斯洛伐克|Slovakia" ] } ] }
+  - { tag: 🇱🇹 立陶宛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇹|\\bLT\\b|立陶宛|Lithuania" ] } ] }
+  - { tag: 🇪🇪 爱沙尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇪🇪|\\bEE\\b|爱沙尼亚|Estonia" ] } ] }
+  - { tag: 🇮🇶 伊拉克自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇶|\\bIQ\\b|伊拉克|Iraq" ] } ] }
+  - { tag: 🇲🇩 摩尔多瓦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇩|\\bMD\\b|摩尔多瓦|Moldova, Republic of" ] } ] }
+  - { tag: 🇵🇪 秘鲁自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇪|\\bPE\\b|秘鲁|Peru" ] } ] }
+  - { tag: 🇰🇿 哈萨克斯坦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇿|\\bKZ\\b|哈萨克斯坦|Kazakhstan" ] } ] }
+  - { tag: 🇷🇸 塞尔维亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇷🇸|\\bRS\\b|塞尔维亚|Serbia" ] } ] }
+  - { tag: 🇸🇦 沙特阿拉伯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇦|\\bSA\\b|沙特阿拉伯|Saudi Arabia|SaudiArabia" ] } ] }
+  - { tag: 🇳🇵 尼泊尔自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇵|\\bNP\\b|尼泊尔|Nepal" ] } ] }
+  - { tag: 🇭🇷 克罗地亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇭🇷|\\bHR\\b|克罗地亚|Croatia" ] } ] }
+  - { tag: 🇩🇴 多米尼加共和国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇩🇴|\\bDO\\b|多米尼加共和国|Dominican Republic|DominicanRepublic" ] } ] }
+  - { tag: 🇱🇧 黎巴嫩自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇧|\\bLB\\b|黎巴嫩|Lebanon" ] } ] }
+  - { tag: 🇨🇾 塞浦路斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇾|\\bCY\\b|塞浦路斯|Cyprus" ] } ] }
+  - { tag: 🇵🇹 葡萄牙自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇹|\\bPT\\b|葡萄牙|Portugal" ] } ] }
+  - { tag: 🇦🇪 阿联酋自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇪|\\bAE\\b|阿联酋|United Arab Emirates" ] } ] }
+  - { tag: 🇵🇦 巴拿马自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇦|\\bPA\\b|巴拿马|Panama" ] } ] }
+  - { tag: 🇲🇲 缅甸自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇲|\\bMM\\b|缅甸|Myanmar" ] } ] }
+  - { tag: 🇬🇪 格鲁吉亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇪|\\bGE\\b|格鲁吉亚|Georgia" ] } ] }
+  - { tag: 🇰🇭 柬埔寨自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇭|\\bKH\\b|柬埔寨|Cambodia" ] } ] }
+  - { tag: 🇧🇾 白俄罗斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇾|\\bBY\\b|白俄罗斯|Belarus" ] } ] }
+  - { tag: 🇱🇺 卢森堡自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇺|\\bLU\\b|卢森堡|Luxembourg" ] } ] }
+  - { tag: 🇦🇲 亚美尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇲|\\bAM\\b|亚美尼亚|Armenia" ] } ] }
+  - { tag: 🇬🇭 加纳自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇭|\\bGH\\b|加纳|Ghana" ] } ] }
+  - { tag: 🇦🇱 阿尔巴尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇱|\\bAL\\b|阿尔巴尼亚|Albania" ] } ] }
+  - { tag: 🇹🇿 坦桑尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇿|\\bTZ\\b|坦桑尼亚|Tanzania, United Republic of" ] } ] }
+  - { tag: 🇨🇷 哥斯达黎加自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇷|\\bCR\\b|哥斯达黎加|Costa Rica|CostaRica" ] } ] }
+  - { tag: 🇭🇳 洪都拉斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇭🇳|\\bHN\\b|洪都拉斯|Honduras" ] } ] }
+  - { tag: 🇺🇿 乌兹别克斯坦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇺🇿|\\bUZ\\b|乌兹别克斯坦|Uzbekistan" ] } ] }
+  - { tag: 🇵🇷 波多黎各自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇷|\\bPR\\b|波多黎各|Puerto Rico|Puerto Rico" ] } ] }
+  - { tag: 🇪🇬 埃及自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇪🇬|\\bEG\\b|埃及|Egypt" ] } ] }
+  - { tag: 🇵🇾 巴拉圭自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇾|\\bPY\\b|巴拉圭|Paraguay" ] } ] }
+  - { tag: 🇸🇨 塞舌尔自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇨|\\bSC\\b|塞舌尔|Seychelles" ] } ] }
+  - { tag: 🇮🇸 冰岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇸|\\bIS\\b|冰岛|Iceland" ] } ] }
+  - { tag: 🇦🇿 阿塞拜疆自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇿|\\bAZ\\b|阿塞拜疆|Azerbaijan" ] } ] }
+  - { tag: 🇬🇹 危地马拉自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇹|\\bGT\\b|危地马拉|Guatemala" ] } ] }
+  - { tag: 🇰🇼 科威特自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇼|\\bKW\\b|科威特|Kuwait" ] } ] }
+  - { tag: 🇦🇴 安哥拉自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇴|\\bAO\\b|安哥拉|Angola" ] } ] }
+  - { tag: 🇦🇫 阿富汗自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇫|\\bAF\\b|阿富汗|Afghanistan" ] } ] }
+  - { tag: 🇲🇳 蒙古自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇳|\\bMN\\b|蒙古|Mongolia" ] } ] }
+  - { tag: 🇵🇸 巴勒斯坦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇸|\\bPS\\b|巴勒斯坦|Palestine" ] } ] }
+  - { tag: 🇺🇬 乌干达自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇺🇬|\\bUG\\b|乌干达|Uganda" ] } ] }
+  - { tag: 🇰🇬 吉尔吉斯斯坦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇬|\\bKG\\b|吉尔吉斯斯坦|Kyrgyzstan" ] } ] }
+  - { tag: 🇧🇴 玻利维亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇴|\\bBO\\b|玻利维亚|Bolivia" ] } ] }
+  - { tag: 🇲🇰 北马其顿自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇰|\\bMK\\b|北马其顿|Macedonia" ] } ] }
+  - { tag: 🇲🇺 毛里求斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇺|\\bMU\\b|毛里求斯|Mauritius" ] } ] }
+  - { tag: 🇲🇹 马耳他自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇹|\\bMT\\b|马耳他|Malta" ] } ] }
+  - { tag: 🇨🇩 刚果民主共和国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇩|\\bCD\\b|刚果民主共和国|Congo" ] } ] }
+  - { tag: 🇧🇦 波斯尼亚和黑塞哥维那自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇦|\\bBA\\b|波斯尼亚和黑塞哥维那|Bosnia and Herzegovina" ] } ] }
+  - { tag: 🇸🇻 萨尔瓦多自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇻|\\bSV\\b|萨尔瓦多|El Salvador" ] } ] }
+  - { tag: 🇯🇴 约旦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇯🇴|\\bJO\\b|约旦|Jordan" ] } ] }
+  - { tag: 🇻🇬 英属维尔京群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇻🇬|\\bVG\\b|英属维尔京群岛|Virgin Islands, British" ] } ] }
+  - { tag: 🇺🇾 乌拉圭自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇺🇾|\\bUY\\b|乌拉圭|Uruguay" ] } ] }
+  - { tag: 🇵🇬 巴布亚新几内亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇬|\\bPG\\b|巴布亚新几内亚|Papua New Guinea" ] } ] }
+  - { tag: 🇱🇦 老挝自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇦|\\bLA\\b|老挝|Lao Peoples Democratic Republic" ] } ] }
+  - { tag: 🇧🇿 伯利兹自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇿|\\bBZ\\b|伯利兹|Belize" ] } ] }
+  - { tag: 🇿🇼 津巴布韦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇿🇼|\\bZW\\b|津巴布韦|Zimbabwe" ] } ] }
+  - { tag: 🇲🇿 莫桑比克自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇿|\\bMZ\\b|莫桑比克|Mozambique" ] } ] }
+  - { tag: 🇨🇼 库拉索自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇼|\\bCW\\b|库拉索|Curaçao" ] } ] }
+  - { tag: 🇨🇲 喀麦隆自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇲|\\bCM\\b|喀麦隆|Cameroon" ] } ] }
+  - { tag: 🇲🇼 马拉维自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇼|\\bMW\\b|马拉维|Malawi" ] } ] }
+  - { tag: 🇧🇼 博茨瓦纳自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇼|\\bBW\\b|博茨瓦纳|Botswana" ] } ] }
+  - { tag: 🇷🇼 卢旺达自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇷🇼|\\bRW\\b|卢旺达|Rwanda" ] } ] }
+  - { tag: 🇳🇮 尼加拉瓜自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇮|\\bNI\\b|尼加拉瓜|Nicaragua" ] } ] }
+  - { tag: 🇧🇹 不丹自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇹|\\bBT\\b|不丹|Bhutan" ] } ] }
+  - { tag: 🇹🇯 塔吉克斯坦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇯|\\bTJ\\b|塔吉克斯坦|Tajikistan" ] } ] }
+  - { tag: 🇱🇾 利比亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇾|\\bLY\\b|利比亚|Libya" ] } ] }
+  - { tag: 🇬🇮 直布罗陀自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇮|\\bGI\\b|直布罗陀|Gibraltar" ] } ] }
+  - { tag: 🇧🇫 布基纳法索自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇫|\\bBF\\b|布基纳法索|Burkina Faso|BurkinaFaso" ] } ] }
+  - { tag: 🇲🇦 摩洛哥自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇦|\\bMA\\b|摩洛哥|Morocco" ] } ] }
+  - { tag: 🇱🇰 斯里兰卡自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇰|\\bLK\\b|斯里兰卡|Sri Lanka" ] } ] }
+  - { tag: 🇿🇲 赞比亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇿🇲|\\bZM\\b|赞比亚|Zambia" ] } ] }
+  - { tag: 🇹🇳 突尼斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇳|\\bTN\\b|突尼斯|Tunisia" ] } ] }
+  - { tag: 🇨🇮 科特迪瓦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇮|\\bCI\\b|科特迪瓦|Côte dIvoire|CôtedIvoire" ] } ] }
+  - { tag: 🇲🇪 黑山自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇪|\\bME\\b|黑山|Montenegro" ] } ] }
+  - { tag: 🇧🇭 巴林自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇭|\\bBH\\b|巴林|Bahrain" ] } ] }
+  - { tag: 🇱🇮 列支敦士登自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇮|\\bLI\\b|列支敦士登|Liechtenstein" ] } ] }
+  - { tag: 🇸🇸 南苏丹自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇸|\\bSS\\b|南苏丹|South Sudan|SouthSudan" ] } ] }
+  - { tag: 🇮🇲 曼岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇲|\\bIM\\b|曼岛|Isle of Man" ] } ] }
+  - { tag: 🇸🇱 塞拉利昂自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇱|\\bSL\\b|塞拉利昂|Sierra Leone|SierraLeone" ] } ] }
+  - { tag: 🇶🇦 卡塔尔自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇶🇦|\\bQA\\b|卡塔尔|Qatar" ] } ] }
+  - { tag: 🇸🇴 索马里自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇴|\\bSO\\b|索马里|Somalia" ] } ] }
+  - { tag: 🇧🇲 百慕大自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇲|\\bBM\\b|百慕大|Bermuda" ] } ] }
+  - { tag: 🇧🇯 贝宁自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇯|\\bBJ\\b|贝宁|Benin" ] } ] }
+  - { tag: 🇴🇲 阿曼自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇴🇲|\\bOM\\b|阿曼|Oman" ] } ] }
+  - { tag: 🇬🇳 几内亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇳|\\bGN\\b|几内亚|Guinea" ] } ] }
+  - { tag: 🇩🇿 阿尔及利亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇩🇿|\\bDZ\\b|阿尔及利亚|Algeria" ] } ] }
+  - { tag: 🇨🇬 刚果自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇬|\\bCG\\b|刚果|Congo" ] } ] }
+  - { tag: 🇹🇩 乍得自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇩|\\bTD\\b|乍得|Chad" ] } ] }
+  - { tag: 🇸🇳 塞内加尔自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇳|\\bSN\\b|塞内加尔|Senegal" ] } ] }
+  - { tag: 🇳🇨 新喀里多尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇨|\\bNC\\b|新喀里多尼亚|New Caledonia|NewCaledonia" ] } ] }
+  - { tag: 🇳🇦 纳米比亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇦|\\bNA\\b|纳米比亚|Namibia" ] } ] }
+  - { tag: 🇬🇦 加蓬自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇦|\\bGA\\b|加蓬|Gabon" ] } ] }
+  - { tag: 🇫🇯 斐济自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇫🇯|\\bFJ\\b|斐济|Fiji" ] } ] }
+  - { tag: 🇹🇹 特立尼达和多巴哥自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇹|\\bTT\\b|特立尼达和多巴哥|Trinidad and Tobago" ] } ] }
+  - { tag: 🇲🇻 马尔代夫自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇻|\\bMV\\b|马尔代夫|Maldives" ] } ] }
+  - { tag: 🇱🇷 利比里亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇷|\\bLR\\b|利比里亚|Liberia" ] } ] }
+  - { tag: 🇦🇬 安提瓜和巴布达自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇬|\\bAG\\b|安提瓜和巴布达|Antigua and Barbuda" ] } ] }
+  - { tag: 🇰🇾 开曼群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇾|\\bKY\\b|开曼群岛|Cayman Islands|CaymanIslands" ] } ] }
+  - { tag: 🇸🇿 斯威士兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇿|\\bSZ\\b|斯威士兰|Swaziland" ] } ] }
+  - { tag: 🇲🇴 澳门自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇴|\\bMO\\b|澳门|Macao" ] } ] }
+  - { tag: 🇭🇹 海地自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇭🇹|\\bHT\\b|海地|Haiti" ] } ] }
+  - { tag: 🇧🇸 巴哈马自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇸|\\bBS\\b|巴哈马|Bahamas" ] } ] }
+  - { tag: 🇻🇺 瓦努阿图自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇻🇺|\\bVU\\b|瓦努阿图|Vanuatu" ] } ] }
+  - { tag: 🇹🇱 东帝汶自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇱|\\bTL\\b|东帝汶|Timor  -Leste" ] } ] }
+  - { tag: 🇸🇩 苏丹自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇩|\\bSD\\b|苏丹|Sudan" ] } ] }
+  - { tag: 🇯🇲 牙买加自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇯🇲|\\bJM\\b|牙买加|Jamaica" ] } ] }
+  - { tag: 🇻🇮 美属维尔京群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇻🇮|\\bVI\\b|美属维尔京群岛|Virgin Islands, U.S." ] } ] }
+  - { tag: 🇸🇲 圣马力诺自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇲|\\bSM\\b|圣马力诺|San Marino|SanMarino" ] } ] }
+  - { tag: 🇲🇬 马达加斯加自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇬|\\bMG\\b|马达加斯加|Madagascar" ] } ] }
+  - { tag: 🇯🇪 泽西岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇯🇪|\\bJE\\b|泽西岛|Jersey" ] } ] }
+  - { tag: 🇬🇲 冈比亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇲|\\bGM\\b|冈比亚|Gambia" ] } ] }
+  - { tag: 🇸🇧 所罗门群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇧|\\bSB\\b|所罗门群岛|Solomon Islands|SolomonIslands" ] } ] }
+  - { tag: 🇲🇱 马里自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇱|\\bML\\b|马里|Mali" ] } ] }
+  - { tag: 🇧🇮 布隆迪自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇮|\\bBI\\b|布隆迪|Burundi" ] } ] }
+  - { tag: 🇼🇸 萨摩亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇼🇸|\\bWS\\b|萨摩亚|Samoa" ] } ] }
+  - { tag: 🇱🇸 莱索托自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇸|\\bLS\\b|莱索托|Lesotho" ] } ] }
+  - { tag: 🇬🇺 关岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇺|\\bGU\\b|关岛|Guam" ] } ] }
+  - { tag: 🇬🇬 格恩西岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇬|\\bGG\\b|格恩西岛|Guernsey" ] } ] }
+  - { tag: 🇬🇩 格林纳达自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇩|\\bGD\\b|格林纳达|Grenada" ] } ] }
+  - { tag: 🇨🇻 佛得角自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇻|\\bCV\\b|佛得角|Cape Verde" ] } ] }
+  - { tag: 🇹🇬 多哥自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇬|\\bTG\\b|多哥|Togo" ] } ] }
+  - { tag: 🇷🇪 留尼汪自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇷🇪|\\bRE\\b|留尼汪|RÉUNION" ] } ] }
+  - { tag: 🇳🇪 尼日尔自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇪|\\bNE\\b|尼日尔|Niger" ] } ] }
+  - { tag: 🇫🇴 法罗群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇫🇴|\\bFO\\b|法罗群岛|Faroe Islands|FaroeIslands" ] } ] }
+  - { tag: 🇧🇳 文莱达鲁萨兰国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇳|\\bBN\\b|文莱|Brunei Darussalam|BruneiDarussalam" ] } ] }
+  - { tag: 🇧🇧 巴巴多斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇧|\\bBB\\b|巴巴多斯|Barbados" ] } ] }
+  - { tag: 🇲🇷 毛里塔尼亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇷|\\bMR\\b|毛里塔尼亚|Mauritania" ] } ] }
+  - { tag: 🇬🇵 瓜德罗普自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇵|\\bGP\\b|瓜德罗普|Guadeloupe" ] } ] }
+  - { tag: 🇪🇹 埃塞俄比亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇪🇹|\\bET\\b|埃塞俄比亚|Ethiopia" ] } ] }
+  - { tag: 🇸🇷 苏里南自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇷|\\bSR\\b|苏里南|Suriname" ] } ] }
+  - { tag: 🇱🇨 圣卢西亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇱🇨|\\bLC\\b|圣卢西亚|Saint Lucia|SaintLucia" ] } ] }
+  - { tag: 🇰🇳 圣基茨和尼维斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇳|\\bKN\\b|圣基茨|Saint Kitts|SaintKitts" ] } ] }
+  - { tag: 🇬🇶 赤道几内亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇶|\\bGQ\\b|赤道几内亚|Equatorial Guinea|EquatorialGuinea" ] } ] }
+  - { tag: 🇩🇲 多米尼克自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇩🇲|\\bDM\\b|多米尼克|Dominica" ] } ] }
+  - { tag: 🇹🇲 土库曼斯坦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇲|\\bTM\\b|土库曼斯坦|Turkmenistan" ] } ] }
+  - { tag: 🇸🇾 叙利亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇾|\\bSY\\b|叙利亚|Syrian Arab Republic" ] } ] }
+  - { tag: 🇲🇭 马绍尔群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇭|\\bMH\\b|马绍尔|Marshall Islands|MarshallIslands" ] } ] }
+  - { tag: 🇬🇾 圭亚那自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇾|\\bGY\\b|圭亚那|Guyana" ] } ] }
+  - { tag: 🇬🇫 法属圭亚那自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇫|\\bGF\\b|法属圭亚那|French Guiana|FrenchGuiana" ] } ] }
+  - { tag: 🇨🇺 古巴自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇺|\\bCU\\b|古巴|Cuba" ] } ] }
+  - { tag: 🇾🇪 也门自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇾🇪|\\bYE\\b|也门|Yemen" ] } ] }
+  - { tag: 🇵🇫 法属波利尼西亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇫|\\bPF\\b|法属波利尼西亚|French Polynesia|FrenchPolynesia" ] } ] }
+  - { tag: 🇲🇶 马提尼克自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇶|\\bMQ\\b|马提尼克|Martinique" ] } ] }
+  - { tag: 🇲🇫 圣马丁（法属）自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇫|\\bMF\\b|圣马丁|Saint Martin|SaintMartin" ] } ] }
+  - { tag: 🇫🇲 密克罗尼西亚联邦自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇫🇲|\\bFM\\b|密克罗尼西亚|Micronesia" ] } ] }
+  - { tag: 🇩🇯 吉布提自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇩🇯|\\bDJ\\b|吉布提|Djibouti" ] } ] }
+  - { tag: 🇧🇶 博内尔、圣尤斯特歇斯和萨巴自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇶|\\bBQ\\b|博内尔|Bonaire" ] } ] }
+  - { tag: 🇹🇴 汤加自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇴|\\bTO\\b|汤加|Tonga" ] } ] }
+  - { tag: 🇵🇼 帕劳自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇼|\\bPW\\b|帕劳|Palau" ] } ] }
+  - { tag: 🇳🇷 瑙鲁自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇷|\\bNR\\b|瑙鲁|Nauru" ] } ] }
+  - { tag: 🇦🇼 阿鲁巴自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇼|\\bAW\\b|阿鲁巴|Aruba" ] } ] }
+  - { tag: 🇦🇮 安圭拉自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇮|\\bAI\\b|安圭拉|Anguilla" ] } ] }
+  - { tag: 🇻🇨 圣文森特和格林纳丁斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇻🇨|\\bVC\\b|圣文森特|Saint Vincent|SaintVincent" ] } ] }
+  - { tag: 🇸🇽 荷属圣马丁自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇽|\\bSX\\b|圣马丁|Sint Maarten|SintMaarten" ] } ] }
+  - { tag: 🇰🇮 基里巴斯自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇮|\\bKI\\b|基里巴斯|Kiribati" ] } ] }
+  - { tag: 🇨🇫 中非共和国自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇫|\\bCF\\b|中非|Central African Republic" ] } ] }
+  - { tag: 🇧🇱 法属圣巴泰勒米自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇧🇱|\\bBL\\b|圣巴泰勒米|Saint Barth|SaintBarth" ] } ] }
+  - { tag: 🇻🇦 梵蒂冈自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇻🇦|\\bVA\\b|梵蒂冈|Vatican" ] } ] }
+  - { tag: 🇹🇻 图瓦卢自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇻|\\bTV\\b|图瓦卢|Tuvalu" ] } ] }
+  - { tag: 🇹🇰 托克劳自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇰|\\bTK\\b|托克劳|Tokelau" ] } ] }
+  - { tag: 🇲🇨 摩纳哥自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇨|\\bMC\\b|摩纳哥|Monaco" ] } ] }
+  - { tag: 🇦🇸 美属萨摩亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇸|\\bAS\\b|美属萨摩亚|American Samoa|AmericanSamoa" ] } ] }
+  - { tag: 🇦🇩 安道尔自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇩|\\bAD\\b|安道尔|Andorra" ] } ] }
+  - { tag: 🇹🇨 特克斯和凯科斯群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇹🇨|\\bTC\\b|特克斯|Turks and Caicos" ] } ] }
+  - { tag: 🇸🇹 圣多美和普林西比自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇸🇹|\\bST\\b|圣多美|Sao Tome|SaoTome" ] } ] }
+  - { tag: 🇳🇫 诺福克岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇫|\\bNF\\b|诺福克|Norfolk Island|NorfolkIsland" ] } ] }
+  - { tag: 🇲🇵 北马里亚纳群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇵|\\bMP\\b|北马里亚纳|Northern Mariana Islands" ] } ] }
+  - { tag: 🇰🇲 科摩罗自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇲|\\bKM\\b|科摩罗|Comoros" ] } ] }
+  - { tag: 🇬🇼 几内亚比绍自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇼|\\bGW\\b|几内亚比绍|Guinea  -Bissau" ] } ] }
+  - { tag: 🇫🇰 福克兰群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇫🇰|\\bFK\\b|福克兰|Falkland" ] } ] }
+  - { tag: 🇨🇰 库克群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇨🇰|\\bCK\\b|库克|Cook Islands|CookIslands" ] } ] }
+  - { tag: 🇾🇹 马约特自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇾🇹|\\bYT\\b|马约特|Mayotte" ] } ] }
+  - { tag: 🇼🇫 瓦利斯和富图纳自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇼🇫|\\bWF\\b|瓦利斯|Wallis" ] } ] }
+  - { tag: 🇵🇲 圣皮埃尔和密克隆自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇵🇲|\\bPM\\b|圣皮埃尔|Saint Pierre|SaintPierre" ] } ] }
+  - { tag: 🇳🇺 纽埃自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇳🇺|\\bNU\\b|纽埃|Niue" ] } ] }
+  - { tag: 🇲🇸 蒙特塞拉特自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇲🇸|\\bMS\\b|蒙特塞拉特|Montserrat" ] } ] }
+  - { tag: 🇰🇵 朝鲜自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇰🇵|\\bKP\\b|朝鲜|North Korea|NorthKorea" ] } ] }
+  - { tag: 🇮🇴 英属印度洋领地自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇮🇴|\\bIO\\b|印度洋|British Indian Ocean" ] } ] }
+  - { tag: 🇬🇱 格陵兰自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇬🇱|\\bGL\\b|格陵兰|Greenland" ] } ] }
+  - { tag: 🇪🇷 厄立特里亚自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇪🇷|\\bER\\b|厄立特里亚|Eritrea" ] } ] }
+  - { tag: 🇦🇽 奥兰群岛自动, type: urltest, url: https://www.gstatic.com/generate_204, interval: 3m, tolerance: 150, outbounds: [], filter: [ { action: include, keywords: [ "🇦🇽|\\bAX\\b|奥兰|Åland" ] } ] }
