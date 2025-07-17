@@ -1,0 +1,1264 @@
+{
+  "outbounds": [
+    {
+      "tag": "🇩🇪德国1",
+      "type": "vless",
+      "server": "185.94.29.46",
+      "server_port": 2015,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇩🇪德国2",
+      "type": "vless",
+      "server": "45.157.233.232",
+      "server_port": 552,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇩🇪德国3",
+      "type": "vless",
+      "server": "176.96.138.171",
+      "server_port": 14000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇩🇪德国4",
+      "type": "vless",
+      "server": "185.254.96.93",
+      "server_port": 4000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇩🇪德国5",
+      "type": "vless",
+      "server": "185.217.108.66",
+      "server_port": 18443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇪🇪爱沙尼亚1",
+      "type": "vless",
+      "server": "159.69.162.184",
+      "server_port": 42262,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇪🇸西班牙1",
+      "type": "vless",
+      "server": "159.69.162.184",
+      "server_port": 43433,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇫🇷法国1",
+      "type": "vless",
+      "server": "195.201.76.49",
+      "server_port": 30658,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇫🇷法国2",
+      "type": "vless",
+      "server": "49.12.227.46",
+      "server_port": 7414,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇫🇷法国3",
+      "type": "vless",
+      "server": "195.201.76.49",
+      "server_port": 31739,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇫🇷法国4",
+      "type": "vless",
+      "server": "5.75.203.195",
+      "server_port": 8082,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇫🇷法国5",
+      "type": "vless",
+      "server": "91.107.151.136",
+      "server_port": 12200,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇬🇧英国1",
+      "type": "vless",
+      "server": "77.75.124.55",
+      "server_port": 8000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇬🇧英国2",
+      "type": "vless",
+      "server": "94.229.72.41",
+      "server_port": 4433,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇬🇧英国3",
+      "type": "vless",
+      "server": "45.89.111.90",
+      "server_port": 1024,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇬🇧英国4",
+      "type": "vless",
+      "server": "185.139.7.179",
+      "server_port": 7000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇬🇧英国5",
+      "type": "vless",
+      "server": "95.164.18.132",
+      "server_port": 81,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇭🇰香港1",
+      "type": "vless",
+      "server": "43.100.78.101",
+      "server_port": 25000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇭🇰香港2",
+      "type": "vless",
+      "server": "175.121.137.173",
+      "server_port": 23390,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇭🇰香港3",
+      "type": "vless",
+      "server": "114.203.203.4",
+      "server_port": 15456,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇯🇵日本1",
+      "type": "vless",
+      "server": "212.50.248.248",
+      "server_port": 17222,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇯🇵日本2",
+      "type": "vless",
+      "server": "8.216.85.47",
+      "server_port": 20443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇯🇵日本3",
+      "type": "vless",
+      "server": "47.74.22.209",
+      "server_port": 7447,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇯🇵日本4",
+      "type": "vless",
+      "server": "45.77.25.6",
+      "server_port": 48828,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇯🇵日本5",
+      "type": "vless",
+      "server": "47.74.22.209",
+      "server_port": 7443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇰🇷韩国1",
+      "type": "vless",
+      "server": "119.197.242.177",
+      "server_port": 50000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇰🇷韩国2",
+      "type": "vless",
+      "server": "221.139.94.50",
+      "server_port": 50000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇰🇷韩国3",
+      "type": "vless",
+      "server": "183.100.116.217",
+      "server_port": 50000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇰🇷韩国4",
+      "type": "vless",
+      "server": "220.123.176.252",
+      "server_port": 50001,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇰🇷韩国5",
+      "type": "vless",
+      "server": "220.81.84.44",
+      "server_port": 50000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇳🇱荷兰1",
+      "type": "vless",
+      "server": "45.147.7.209",
+      "server_port": 20000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇳🇱荷兰2",
+      "type": "vless",
+      "server": "45.142.164.17",
+      "server_port": 7000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇳🇱荷兰3",
+      "type": "vless",
+      "server": "45.147.7.209",
+      "server_port": 20001,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇳🇱荷兰4",
+      "type": "vless",
+      "server": "195.133.24.206",
+      "server_port": 10086,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇳🇱荷兰5",
+      "type": "vless",
+      "server": "206.188.196.99",
+      "server_port": 9444,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇵🇱波兰1",
+      "type": "vless",
+      "server": "185.233.184.66",
+      "server_port": 8442,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇵🇱波兰2",
+      "type": "vless",
+      "server": "46.17.103.92",
+      "server_port": 2054,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇵🇱波兰3",
+      "type": "vless",
+      "server": "31.207.45.75",
+      "server_port": 49959,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇵🇱波兰4",
+      "type": "vless",
+      "server": "46.17.98.21",
+      "server_port": 587,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇵🇱波兰5",
+      "type": "vless",
+      "server": "66.248.207.125",
+      "server_port": 587,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇪瑞典1",
+      "type": "vless",
+      "server": "213.232.120.10",
+      "server_port": 1443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇪瑞典2",
+      "type": "vless",
+      "server": "185.89.43.10",
+      "server_port": 1443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇪瑞典3",
+      "type": "vless",
+      "server": "5.181.168.10",
+      "server_port": 1443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇪瑞典4",
+      "type": "vless",
+      "server": "185.152.94.10",
+      "server_port": 1443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇪瑞典5",
+      "type": "vless",
+      "server": "85.239.56.10",
+      "server_port": 1443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇬新加坡1",
+      "type": "vless",
+      "server": "47.236.100.228",
+      "server_port": 20443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇬新加坡2",
+      "type": "vless",
+      "server": "8.222.159.134",
+      "server_port": 12483,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇬新加坡3",
+      "type": "vless",
+      "server": "47.236.243.17",
+      "server_port": 25967,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇬新加坡4",
+      "type": "vless",
+      "server": "47.236.173.242",
+      "server_port": 29887,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇸🇬新加坡5",
+      "type": "vless",
+      "server": "47.128.209.44",
+      "server_port": 11443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇹🇷土耳其1",
+      "type": "vless",
+      "server": "93.185.163.193",
+      "server_port": 1701,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇹🇷土耳其2",
+      "type": "vless",
+      "server": "93.185.163.220",
+      "server_port": 1701,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇹🇷土耳其3",
+      "type": "vless",
+      "server": "2.58.56.192",
+      "server_port": 1701,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇹🇷土耳其4",
+      "type": "vless",
+      "server": "194.26.192.125",
+      "server_port": 1701,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇹🇷土耳其5",
+      "type": "vless",
+      "server": "2.58.56.28",
+      "server_port": 1701,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇺🇸美国1",
+      "type": "vless",
+      "server": "104.234.4.32",
+      "server_port": 7000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇺🇸美国2",
+      "type": "vless",
+      "server": "192.69.92.111",
+      "server_port": 8081,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇺🇸美国3",
+      "type": "vless",
+      "server": "104.245.12.121",
+      "server_port": 1443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇺🇸美国4",
+      "type": "vless",
+      "server": "154.17.12.30",
+      "server_port": 7000,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    },
+    {
+      "tag": "🇺🇸美国5",
+      "type": "vless",
+      "server": "142.171.74.214",
+      "server_port": 4443,
+      "uuid": "25284107-7424-40a5-8396-cdd0623f4f05",
+      "tls": {
+        "enabled": true,
+        "server_name": "excs.haxtop.ggff.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "excs.haxtop.ggff.net"
+        },
+        "path": "/",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560
+      }
+    }
+  ]
+}
