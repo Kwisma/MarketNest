@@ -1,0 +1,7 @@
+{
+  proxies: [
+    { name: "proxy1", type: "ss", server: "1.1.1.1" },
+    { name: "proxy1", type: "vmess", server: "2.2.2.2" },
+    { name: "proxy2", type: "trojan", server: "3.3.3.3" }
+  ]
+};
