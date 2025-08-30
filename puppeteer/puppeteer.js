@@ -1,3 +1,13 @@
+// ----------------------
+// 截图工具说明
+// ----------------------
+// 如果截图中文字/图标出现乱码，可以安装以下字体：
+//   - 表情符号乱码：fonts-noto-color-emoji
+//   - 中文乱码：fonts-wqy-microhei
+//
+// 一条命令安装：
+// apt update && apt install -y fonts-wqy-microhei fonts-noto-color-emoji
+
 import puppeteer from "puppeteer";
 import fs from "fs";
 import os from "os";
@@ -11,7 +21,7 @@ const createDefaultConfig = () => ({
     
     // 输出设置
     output: {
-        path: "screenshot.png",
+        path: "../icon/icon.png",
         type: "png",
         quality: 95,
     },
@@ -201,70 +211,9 @@ class PageManager {
         await this.page.setViewport({ width, height, deviceScaleFactor });
         console.log("设置视口:", width, "x", height, "@", deviceScaleFactor, "x");
     }
-    
-    // 添加字体预加载方法
-    async preloadFonts() {
-        console.log("预加载字体以确保符号显示正常...");
-        await this.page.addStyleTag({
-            content: `
-                @font-face {
-                    font-family: 'SymbolFallback';
-                    src: local('Arial'), local('Helvetica'), local('sans-serif');
-                    unicode-range: U+2715, U+2795, U+2713, U+2717;
-                }
-                * {
-                    font-family: 'SymbolFallback', Arial, Helvetica, sans-serif !important;
-                }
-            `
-        });
-    }
-    
-    // 添加确保符号显示的方法
-    async ensureSymbolsDisplay() {
-        console.log("确保特殊符号正确显示...");
-        await this.page.evaluate(() => {
-            // 替换可能无法显示的符号
-            const replacements = {
-                '➕': '+',
-                '❌': 'X',
-                '✅': '√',
-                '⚠️': '!',
-                '🔧': '>',
-                '📁': '[F]',
-                '🌐': '[W]',
-                '📏': '[S]',
-                '🖥️': '[M]',
-                '📋': '[M]',
-                '⏱️': '[T]'
-            };
-            
-            // 遍历文本节点进行替换
-            const walker = document.createTreeWalker(
-                document.body,
-                NodeFilter.SHOW_TEXT,
-                null,
-                false
-            );
-            
-            let node;
-            while (node = walker.nextNode()) {
-                let text = node.nodeValue;
-                for (const [symbol, replacement] of Object.entries(replacements)) {
-                    if (text.includes(symbol)) {
-                        text = text.replace(new RegExp(symbol, 'g'), replacement);
-                    }
-                }
-                node.nodeValue = text;
-            }
-        });
-    }
-    
+
     async screenshot(options = {}) {
         console.log("正在截图...");
-        
-        // 确保符号正确显示
-        await this.ensureSymbolsDisplay();
-        
         return await this.page.screenshot(options);
     }
     
@@ -298,9 +247,6 @@ class ScreenshotService {
                 this.config.viewport.height, 
                 this.config.deviceScaleFactor
             );
-            
-            // 预加载字体
-            await pageManager.preloadFonts();
             
             // 导航到页面
             await pageManager.navigate(url, {
