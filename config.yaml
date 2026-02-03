@@ -1,19 +1,1 @@
-proxies:
-  - name: "cloudflare"
-    type: vless
-    server: youxuan.cf.090227.xyz
-    port: 443
-    uuid: bd39a6e2-80a8-4c7d-af0b-315af3b38b21
-    tls: true
-    network: ws
-    servername: cfnew.saberwintest.workers.dev # AKA SNI
-    client-fingerprint: chrome # Available: "chrome","firefox","safari","random","none"
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: cfnew.saberwintest.workers.dev
-    ech-opts:
-      enable: true # 必须手动开启
-    #   # 如果config为空则通过dns解析，不为空则通过该值指定，格式为经过base64编码的ech参数（dig +short TYPE65 tls-ech.dev）
-      config: AEX+DQBBOQAgACDFEw1zR7j29L97OZoHvkHdwmsG7mtNluWRQbRH9SrpbwAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA=
 
